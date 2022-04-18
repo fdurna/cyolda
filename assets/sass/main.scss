@@ -1,0 +1,36 @@
+// Base Styles
+@import 'vendors/font-awesome';
+@import 'vendors/bootstrap';
+
+// Custom
+@import 'base/typography';
+@import 'base/reset';
+@import 'base/defaults';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/sub-page-banner'; // Theme: Sub Page Banner
+
+// Components
+@import 'components/main-banner'; // Theme: Home Big Banner
+@import 'components/roadmap'; // Theme: Roadmap
+
+// Page Components
+
+// Custom Components
+@import 'components/card';
+
+// Pages
+// Home
+@import 'pages/home';
+
+//About
+@import 'pages/about'; // Theme: About Page, Home / About Part
+
+// Contact
+@import 'pages/contact';
+
+// Color Scheme and Responsives
+@import 'vendors/color';
+@import 'vendors/responsive';
