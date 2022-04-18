@@ -1,4 +1,108 @@
 @import '../utilities/variables';
+
 header {
-  
+  margin:40px 0;
+  @media (max-width: $screensm) {
+    margin:20px 0;
+  }
+  .logo-search-account {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    @media (max-width: $screensm) {
+      flex-direction: column;
+    }
+    .logo {
+      width:25%;
+      @media (max-width: $screensm) {
+        width:100%;
+        text-align: center !important;
+      }
+      a {
+        img {
+
+        }
+      }
+    }
+    .search {
+      width:50%;
+      position: relative;
+      @media (max-width: $screensm) {
+        width:100%;
+        margin:20px 0;
+      }
+      input {
+        width: 100%;
+        padding: 10px 35px 10px 0;
+
+        border-width: 0 0 1px;
+        border-color: rgba(0,0,0,.25);
+
+        -webkit-transition: .5s;
+        -o-transition: .5s;
+        transition: .5s;
+        
+        background-color: transparent;
+      }
+      button {
+        position: absolute;
+        top: 10%;
+        right: 0;
+        z-index: 9;
+
+        font-size: 22px;
+        color: $black;
+        line-height: 1;
+
+        cursor: pointer;
+        z-index: 1;
+        border: none;
+        
+        background: transparent;
+        padding-right:0;
+      }
+    }
+    .account {
+      display:flex;
+      align-items: center;
+      justify-content:flex-end;
+
+      width:25%;
+      @media (max-width: $screensm) {
+        width:100%;
+        justify-content: center;
+      }
+      a {
+        display:flex;
+        align-items: center;
+        position: relative;
+
+        min-height: 25px;
+        &:nth-child(2) {
+          margin:0 40px;
+        }
+        span {
+          display:flex;
+          align-items: center;
+          justify-content:center;
+
+          position: absolute;
+          right: -5px;
+          bottom:-8px;
+
+          font-size: 11px;
+
+          width:16px;
+          height:16px;
+
+          border-radius: 50%;
+          text-align: center;
+          
+          color:$black;
+          background-color:$orange;
+
+        }
+      }
+    }
+  }
 }

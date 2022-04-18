@@ -83,7 +83,6 @@ p {
 input {
   &:focus {
     outline: unset;
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
   }
   transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
