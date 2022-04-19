@@ -9450,6 +9450,175 @@ header .logo-search-account .account a span {
   }
 }
 
+section.products-list .title-and-product-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+section.products-list .title-and-product-links h1 {
+  font-size: 30px;
+  color: #000;
+}
+
+section.products-list .title-and-product-links ul li {
+  position: relative;
+  padding: 0 20px;
+}
+
+section.products-list .title-and-product-links ul li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 1px;
+  height: 10px;
+  background-color: #000;
+}
+
+section.products-list .title-and-product-links ul li:last-child:after {
+  display: none;
+}
+
+section.products-list .title-and-product-links ul li a {
+  font-size: 16px;
+  color: #000;
+}
+
+section.products-list .title-and-product-links ul li a.active {
+  color: #979797;
+}
+
+.product-item {
+  margin-bottom: 20px;
+}
+
+.product-item a .image {
+  position: relative;
+}
+
+.product-item a .image span {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.product-item a .image span.onsale {
+  background-color: #f14705;
+}
+
+.product-item a .image span.out-of-stock {
+  background-color: #000;
+}
+
+.product-item a .content {
+  margin-top: 20px;
+}
+
+.product-item a .content .title {
+  margin-bottom: 12px;
+}
+
+.product-item a .content .title h5 {
+  font-size: 16px;
+  color: #000;
+}
+
+.product-item a .content .price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-item a .content .price span {
+  font-size: 17px;
+  color: #545454;
+  margin: 0 5px;
+}
+
+.home .section-space.title-subtitle {
+  margin: 80px 0;
+}
+
+.home .section-space.title-subtitle h5 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.home .section-space.title-subtitle p {
+  max-width: 780px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  .home .section-space.title-subtitle {
+    margin: 20px 0;
+  }
+  .home .section-space.title-subtitle h5 {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+  .home .section-space.title-subtitle p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.home .section-space.sign-up-of {
+  margin: 40px 0;
+}
+
+.home .section-space.sign-up-of .banner {
+  background: #efefef;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.home .section-space.sign-up-of .banner .text {
+  margin-bottom: 25px;
+}
+
+.home .section-space.sign-up-of .banner .text h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.home .section-space.sign-up-of .banner .text p {
+  font-size: 14px;
+  color: #000;
+}
+
+.home .section-space.sign-up-of .banner .form {
+  position: relative;
+  max-width: 420px;
+}
+
+.home .section-space.sign-up-of .banner .form form input {
+  height: 45px;
+  border: none;
+  padding-left: 15px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.home .section-space.sign-up-of .banner .form form button {
+  position: absolute;
+  top: 27%;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;

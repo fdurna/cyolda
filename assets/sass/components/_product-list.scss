@@ -1,0 +1,87 @@
+@import '../utilities/_variables';
+
+section {
+    &.products-list {
+        .title-and-product-links {
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            margin-bottom: 20px;
+            h1 {
+                font-size: 30px;
+                color:$black;
+            }
+            ul {
+                li {
+                    position: relative;
+                    padding:0 20px;
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        right: 0;
+                        top: 30%;
+                        width:1px;
+                        height:10px;
+                        background-color:$black;
+                    }
+                    &:last-child {
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    a {
+                        font-size: 16px;
+                        color:$black;
+                        &.active {
+                            color:#979797;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.product-item {
+    margin-bottom: 20px;
+    a {
+        .image {
+            position: relative;
+            span {
+                position: absolute;
+                top:12px;
+                right:12px;
+                color:$white;
+                padding:5px 10px;
+                &.onsale {
+                    background-color:$darkred;
+                }
+                &.out-of-stock {
+                    background-color:$black;
+                }
+            }
+        }
+        .content {
+            margin-top:20px;
+            .title {
+                margin-bottom: 12px;
+                h5 {
+                    font-size: 16px;
+                    color:$black;
+                }
+            }
+            .price {
+                display: flex;
+                align-items:center;
+                justify-content:center;
+                span {
+                   font-size: 17px;
+                   color:#545454;
+                   margin:0 5px;
+                }
+            }
+        }
+    }
+}
