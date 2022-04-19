@@ -9619,6 +9619,108 @@ section.products-list .title-and-product-links ul li a.active {
   border: none;
 }
 
+.home .section-space.about-us .one-grid {
+  background-color: #f4f5f7;
+  margin-bottom: 20px;
+}
+
+.home .section-space.about-us .one-grid .col-xs-12:last-child {
+  padding: 0 0;
+}
+
+.home .section-space.about-us .one-grid .info {
+  padding: 50px;
+}
+
+.home .section-space.about-us .one-grid .info h5 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.home .section-space.about-us .one-grid .info p {
+  line-height: 1.74;
+  margin-bottom: 70px;
+  font-size: 16px;
+  color: #000;
+}
+
+.home .section-space.about-us .one-grid .info a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #000;
+}
+
+.home .section-space.about-us .one-grid .info a span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home .section-space.about-us .one-grid .img a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.home .section-space.about-us .one-grid .img a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0  auto;
+}
+
+.home .section-space.about-us .two-grid .col-md-6:first-child {
+  padding-left: 0;
+}
+
+.home .section-space.about-us .two-grid .col-md-6:last-child {
+  padding-right: 0;
+}
+
+.home .section-space.about-us .two-grid a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.home .section-space.about-us .two-grid a img {
+  width: 100%;
+}
+
+.home .section-space.about-us .two-grid a .text {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+}
+
+.home .section-space.about-us .two-grid a .text h3 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: #000;
+}
+
+.home .section-space.about-us .two-grid a .text h4 {
+  font-size: 18px;
+  color: #000;
+}
+
+.home .section-space.about-us .two-grid a .text .shop {
+  margin-top: 70px;
+  color: #000;
+}
+
+.home .section-space.about-us .two-grid a .text .shop span {
+  font-size: 16px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 1140px;
