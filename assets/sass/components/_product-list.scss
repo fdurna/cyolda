@@ -49,6 +49,11 @@ section {
     a {
         .image {
             position: relative;
+            img {
+                @media (max-width: $screenmd) {
+                    width: 100%;
+                }
+            }
             span {
                 position: absolute;
                 top:12px;

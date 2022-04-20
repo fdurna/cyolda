@@ -1,4 +1,280 @@
 @import '../utilities/variables';
 footer {
+    margin-top:100px;
+    @media (max-width: $screenmd) {
+        margin-top:20px;
+    }
+    .support {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        @media (max-width: $screenmd) {
+            flex-direction: column;
+        }
+        .item { 
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            @media (max-width: $screenmd) {
+                flex-direction: column;
+                margin-bottom:15px
+              }
+            .icon {
+                margin-right: 15px;
+                @media (max-width: $screenmd) {
+                    margin-right: 0;
+                    margin-bottom: 15px;
+                }
+                i {
 
+                }
+            }
+            .text {
+                color:$black;
+                @media (max-width: $screenmd) {
+                    text-align: center;
+                }
+                h6 {
+                    font-size: 18px;
+                    margin-bottom:7px;
+                }
+                h5 {
+                    font-size: 16px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    .our-newsletter {
+        margin-top:100px;
+        @media (max-width: $screenmd) {
+            margin-top:20px;
+        }
+        .title-form {
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            @media (max-width: $screenmd) {
+                flex-direction: column;
+            }
+            .title {
+                position: relative;
+                display: inline-block;
+                @media (max-width: $screenmd) {
+                 margin-bottom: 40px;
+                }
+                h2 {
+                    &:before {
+                        content:'';
+                        position: absolute;
+                        display: block;
+                        width:75px;
+                        height:3px;
+                        left:0;
+                        bottom:-10px;
+                        background-color:$orange;
+                    }
+                }
+            }
+            .form {
+                position: relative;
+                width:50%;
+                display: flex;
+                justify-content: flex-end;
+                @media (max-width: $screenmd) {
+                    width:100%;
+                }
+                form {
+                    width:100%;
+                    input {
+                        width:100%;
+                        background-color:#f4f5f7;
+                        height:50px;
+                        line-height: 50px;
+                        padding:10px;
+                        text-align: left;
+                        color:$black;
+                        border:none;
+                    }
+                    button {
+                        position: absolute;
+                        right:0;
+                        top:0;
+                        background-color:$black;
+                        color:$white;
+                        height:100%;
+                        line-height:100%;
+                        border:none;
+                        padding:0 40px;
+                    }
+                }
+               
+            }
+        }
+    }
+    .footer {
+        margin-top:100px;
+        margin-bottom: 50px;
+        display: inline-block;
+        width:100%;
+        @media (max-width: $screenmd) {
+         margin-top: 50px;
+        }
+        .widget-wrapper {
+            @media (max-width: $screenmd) {
+                > div {
+                    margin-bottom:15px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            h6 {
+                color:$black;
+                font-size:15px;
+                margin-bottom: 15px;
+            }
+            .mini-contact {
+                ul {
+                    &.info {
+                        li {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 5px;
+                            i {
+                                margin-right: 15px;
+                            }
+                            span , a {
+                                color:$black;
+                                font-size: 14px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    
+                }
+                .social-networks {
+                    display: flex;
+                    align-items: center;
+                    justify-content:flex-start;
+                    margin-top: 15px;
+                    a {
+                        &:nth-child(2) {
+                            margin:0 15px;
+                        }
+                        i {
+
+                        }
+                    }   
+                }
+            }  
+            
+            .menu {
+                ul {
+                    li {
+                        margin-bottom:10px;
+                        a {
+                            color:$black;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            } 
+
+            .newsletter {
+                .form {
+                    width: 100%;
+                    position: relative;
+                    margin-bottom:50px;
+                    input {
+                        height:45px;
+                        line-height: 45px;
+                        background-color:transparent;
+                        border:none;
+                        border-bottom: 1px solid #c9c9c9;
+                        width:100%;
+
+                    }
+                    button {
+                        position: absolute;
+                        right: 0;
+                        top:10px;
+                        border:none;
+                        background-color:transparent;
+                    }
+                }
+                ul {
+                    display: flex;
+                    align-items: center;
+                    @media (max-width: $screenmd) {
+                     justify-content:center;
+                    }
+                    li {
+                        &:nth-child(2) {
+                            margin:0 30px;
+                        }
+                        a {
+                            color:$black;
+                            font-size: 13px;
+                        }
+                    }
+                } 
+            }
+        }
+        .copyright {
+            margin-top:80px;
+            @media (max-width: $screenmd) {
+                margin-top: 15px;
+            }
+            .links {
+                @media (max-width: $screenmd) {
+                    display: none;
+                }
+                ul {
+                    li {
+                        display: inline-block;
+                        margin-right: 12px;
+                        a {
+                            font-size: 14px;
+                            color:$black;
+                        }
+                    }
+                }
+            }
+            .logo {
+                a {
+                    font-size:40px;
+                    color:$black;
+                    font-weight: bold;
+                }
+            }
+            .social{
+                display: flex;
+                align-items: center;
+                justify-content:space-between;
+                @media (max-width: $screenmd) {
+                    display: none;
+                }
+                h6 {
+                    font-size: 14px !important;
+                }
+                ul {
+                    margin-left: 15px;
+                    li {
+                        display:inline-block;
+                        &:nth-child(2) {
+                            margin:0 20px
+                        }
+                        a {
+                            color:$black;
+                            i {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }
