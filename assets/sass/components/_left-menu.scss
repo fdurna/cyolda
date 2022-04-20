@@ -1,0 +1,96 @@
+@import '../utilities/_variables';
+
+section {
+    &.page-product {
+        .left-menu {
+            .item {
+                border-bottom: 1px solid #c9c9c9;
+                padding-bottom: 25px;
+                margin-bottom: 25px;
+                &:last-child {
+                    border:none;
+                }
+                h5 {
+                    margin-bottom: 25px;
+                }
+                &.categories {
+                    ul {
+                        li {
+                            margin-bottom:10px;
+                            a {
+                                font-size: 13px;
+                                font-weight: 500;
+                                color:$black;
+                            }
+                        }
+                    }
+                }
+                &.color {
+                    ul {
+                        li {
+                            &.circular {
+                                display: inline-block;
+                                margin-right:25px;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                            }
+                            a {
+                                width:15px;
+                                height:15px;
+                                display: block;
+                                border-radius: 100%;
+                            }
+                            &.red {
+                                a {
+                                    background-color:red;
+                                }
+                            }
+                            &.blue {
+                                a {
+                                    background-color:blue;
+                                }
+                            }
+                            &.purple {
+                                a {
+                                    background-color:purple;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.size {
+                    ul {
+                        li {
+                            display: block;
+                            margin-bottom:10px;
+                            a {
+                                display: flex;
+                                align-items: center;
+                                justify-content:space-between;
+                                span {
+                                    color:$black;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.price {
+
+                }
+                &.tags {
+                    ul {
+                        li {
+                            display: inline-block;
+                            font-size: 13px;
+                            font-weight: 500;
+                            color:$black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

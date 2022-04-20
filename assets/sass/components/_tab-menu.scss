@@ -1,0 +1,42 @@
+@import '../utilities/_variables';
+
+
+.title-and-product-links {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    h1 {
+        font-size: 30px;
+        color:$black;
+    }
+    ul {
+        li {
+            position: relative;
+            padding:0 20px;
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                right: 0;
+                top: 30%;
+                width:1px;
+                height:10px;
+                background-color:$black;
+            }
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+            a {
+                font-size: 16px;
+                color:$black;
+                &.active {
+                    color:#979797;
+                }
+            }
+            
+        }
+    }
+}

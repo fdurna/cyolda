@@ -15,19 +15,22 @@
 // Components
 @import 'components/main-banner'; // Theme: Home Big Banner
 @import 'components/roadmap'; // Theme: Roadmap
+@import 'components/sub-page-banner'; // Theme: Home Big Banner
 
 // Page Components
 
 // Custom Components
-@import 'components/product-list';
-@import 'components/card';
+@import 'components/tab-menu';
+@import 'components/product';
+@import 'components/left-menu';
+
 
 // Pages
 // Home
 @import 'pages/home';
 
-//About
-@import 'pages/about'; // Theme: About Page, Home / About Part
+//Product-list
+@import 'pages/product-list'; 
 
 // Contact
 @import 'pages/contact';
