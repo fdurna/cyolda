@@ -25,4 +25,44 @@ i {
     height:25px;
     background-image:url($Img + '/icons/basket.svg')
   }
+  &.day-icon {
+    width:50px;
+    height:50px;
+    background-image:url($Img + '/icons/day.svg')
+  }
+  &.support-icon {
+    width:55px;
+    height:50px;
+    background-image:url($Img + '/icons/support.svg')
+  }
+  &.shopping-icon {
+    width:55px;
+    height:45px;
+    background-image:url($Img + '/icons/shopping.svg')
+  }
+  &.location-icon {
+    width: 19px;
+    height: 25px;
+    background-image:url($Img + '/icons/location.svg')
+  }
+  &.phone-icon {
+    width: 24px;
+    height: 22px;
+    background-image:url($Img + '/icons/telephone.svg')
+  }
+  &.facebook-icon {
+    width: 24px;
+    height: 22px;
+    background-image:url($Img + '/icons/facebook.svg')
+  }
+  &.instagram-icon {
+    width: 24px;
+    height: 22px;
+    background-image:url($Img + '/icons/instagram.svg')
+  }
+  &.linkedin-icon {
+    width: 24px;
+    height: 22px;
+    background-image:url($Img + '/icons/linkedin.svg')
+  }
 } 

@@ -78,7 +78,17 @@ section {
                     }
                 }
                 &.price {
-
+                    ul {
+                        li {
+                            margin-bottom: 5px;
+                            a {
+                                span {
+                                    color:$black;
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+                    }
                 }
                 &.tags {
                     ul {
