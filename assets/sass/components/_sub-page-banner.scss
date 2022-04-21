@@ -12,6 +12,9 @@
             flex-direction: column;
             justify-content: center;
         }
+        &.center {
+            justify-content: center;
+        }
     }
     .bread-crumb {
         @media (max-width: $screenmd) {

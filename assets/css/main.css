@@ -1,3 +1,4 @@
+@charset "UTF-8";
 i.icon {
   background-repeat: no-repeat;
   display: block;
@@ -9034,258 +9035,41 @@ input:focus {
   outline: unset;
 }
 
-.transition {
-  transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -webkit-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-}
-
 .btn {
-  transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -webkit-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  font-family: 'Lato', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border: 1px solid;
-  padding: 14px 22px;
-  border-radius: 5px;
-  position: relative;
-  transform: translateY(0px);
-}
-
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: -1px 10px 32px -9px rgba(22, 213, 255, 0.75) !important;
-}
-
-.btn:hover:before {
-  opacity: 1;
-  transform: translateY(5px);
-}
-
-.btn.btn-sm {
-  padding: 10px 16px;
-}
-
-.btn.btn-xs {
-  padding: 7px 10px;
-  font-weight: 400;
-}
-
-.btn.btn-pdf {
-  border: 1px solid red;
-}
-
-@media screen and (max-width: 991px) {
-  .btn {
-    padding: 14px 5px;
-  }
-}
-
-.btn.large-btn {
-  width: 275px;
-}
-
-.form-control {
-  transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -webkit-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  border-radius: 5px;
-  border: 0;
-  height: auto;
-  padding: 13px 20px;
-}
-
-@media screen and (max-width: 576px) {
-  .form-control {
-    padding: 10px 15px;
-  }
-}
-
-.container {
-  max-width: 1230px;
-}
-
-.position-u {
-  position: unset;
-}
-
-.position-r {
-  position: relative;
-}
-
-.flex-align {
-  display: flex;
-  align-items: center;
-}
-
-.flex-bottom {
-  display: flex;
-  align-items: flex-end;
-}
-
-.justify-center {
-  justify-content: center;
-  display: flex;
-}
-
-.sub-heading {
-  text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
-  padding-bottom: 3px;
-}
-
-.heading-title {
-  font-size: 40px;
-  font-weight: 600;
-  padding-bottom: 18px;
-}
-
-.heading-des {
-  max-width: 580px;
-  margin: 0 auto;
-}
-
-.heading-title-2 {
-  font-size: 45px;
-  font-weight: 600;
-}
-
-.sub-heading-2 {
-  font-size: 30px;
-  font-weight: 600;
-}
-
-.z-index-2 {
-  z-index: 2;
-}
-
-.white-space {
-  white-space: nowrap;
-}
-
-.clear {
-  clear: both;
-}
-
-.top-scroll {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  border-radius: 5px;
-  z-index: 999;
-  bottom: 15px;
-  right: 15px;
-  width: 35px;
-  height: 35px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
   text-align: center;
-  line-height: 32px;
-  font-size: 26px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0;
+  border: 1px solid transparent;
 }
 
-.top-scroll.fixed {
-  visibility: visible;
-  opacity: 1;
+.btn-black {
+  background-color: #000;
+  color: #fff;
 }
 
-.ptb-100 {
-  padding-top: 100px;
-  padding-bottom: 100px;
+.btn-black:hover {
+  background-color: #ddb14a;
+  color: #fff;
 }
 
-.ptb-50 {
-  padding-top: 50px;
-  padding-bottom: 50px;
+.btn-transparent {
+  background-color: transparent;
+  border-color: #000;
+  color: #000;
 }
 
-.pt-50 {
-  padding-top: 50px;
+.btn-transparent:hover {
+  background-color: #ddb14a;
+  color: #fff;
 }
 
-.pb-50 {
-  padding-bottom: 50px;
-}
-
-.pt-10 {
-  padding-top: 10px;
-}
-
-.pt-15 {
-  padding-top: 15px;
-}
-
-.pt-25 {
-  padding-top: 25px;
-}
-
-.pt-100 {
-  padding-top: 100px;
-}
-
-.pb-100 {
-  padding-bottom: 100px;
-  padding-bottom: 100px;
-}
-
-.pr-75 {
-  padding-right: 75px;
-}
-
-.pb-10 {
-  padding-bottom: 10px;
-}
-
-.pb-15 {
-  padding-bottom: 15px;
-}
-
-.pb-20 {
-  padding-bottom: 20px;
-}
-
-.pb-25 {
-  padding-bottom: 25px;
-}
-
-.pb-40 {
-  padding-bottom: 40px;
-}
-
-.pb-45 {
-  padding-bottom: 45px;
-}
-
-.pb-55 {
-  padding-bottom: 55px;
-}
-
-.pb-65 {
-  padding-bottom: 65px;
-}
-
-.pb-80 {
-  padding-bottom: 80px;
-}
-
-.mb-15 {
-  margin-bottom: 15px;
-}
-
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-.mb-30 {
-  margin-bottom: 30px;
-}
-
-.mb-45 {
-  margin-bottom: 45px;
+.btn-transparent:hover:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 h1 {
@@ -9838,6 +9622,10 @@ footer .footer .copyright .social ul li a {
   }
 }
 
+.sub-page-banner > .container.center {
+  justify-content: center;
+}
+
 @media (max-width: 991px) {
   .sub-page-banner .bread-crumb {
     margin-bottom: 20px;
@@ -9992,85 +9780,146 @@ footer .footer .copyright .social ul li a {
   margin: 0 5px;
 }
 
-section.page-product .left-menu .item {
+section.page-product-details .info .title-and-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.page-product-details .info .title-and-rating .title h1 {
+  font-size: 20px;
+}
+
+section.page-product-details .info .title-and-rating .rating {
+  display: flex;
+  align-items: center;
+}
+
+section.page-product-details .info .title-and-rating .rating span {
+  font-size: 12px;
+  color: #000;
+  font-weight: 500;
+}
+
+.rate {
+  padding: 0 10px;
+}
+
+.rate:not(:checked) > input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked) > label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
+}
+
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+
+.rate > input:checked ~ label {
+  color: #ffc700;
+}
+
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;
+}
+
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+section.page-products .left-menu .item {
   border-bottom: 1px solid #c9c9c9;
   padding-bottom: 25px;
   margin-bottom: 25px;
 }
 
-section.page-product .left-menu .item:last-child {
+section.page-products .left-menu .item:last-child {
   border: none;
 }
 
-section.page-product .left-menu .item h5 {
+section.page-products .left-menu .item h5 {
   margin-bottom: 25px;
 }
 
-section.page-product .left-menu .item.categories ul li {
+section.page-products .left-menu .item.categories ul li {
   margin-bottom: 10px;
 }
 
-section.page-product .left-menu .item.categories ul li a {
+section.page-products .left-menu .item.categories ul li a {
   font-size: 13px;
   font-weight: 500;
   color: #000;
 }
 
-section.page-product .left-menu .item.color ul li.circular {
+section.page-products .left-menu .item.color ul li.circular {
   display: inline-block;
   margin-right: 25px;
 }
 
-section.page-product .left-menu .item.color ul li.circular:last-child {
+section.page-products .left-menu .item.color ul li.circular:last-child {
   margin-right: 0;
 }
 
-section.page-product .left-menu .item.color ul li a {
+section.page-products .left-menu .item.color ul li a {
   width: 15px;
   height: 15px;
   display: block;
   border-radius: 100%;
 }
 
-section.page-product .left-menu .item.color ul li.red a {
+section.page-products .left-menu .item.color ul li.red a {
   background-color: red;
 }
 
-section.page-product .left-menu .item.color ul li.blue a {
+section.page-products .left-menu .item.color ul li.blue a {
   background-color: blue;
 }
 
-section.page-product .left-menu .item.color ul li.purple a {
+section.page-products .left-menu .item.color ul li.purple a {
   background-color: purple;
 }
 
-section.page-product .left-menu .item.size ul li {
+section.page-products .left-menu .item.size ul li {
   display: block;
   margin-bottom: 10px;
 }
 
-section.page-product .left-menu .item.size ul li a {
+section.page-products .left-menu .item.size ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-section.page-product .left-menu .item.size ul li a span {
+section.page-products .left-menu .item.size ul li a span {
   color: #000;
   font-size: 14px;
   font-weight: 500;
 }
 
-section.page-product .left-menu .item.price ul li {
+section.page-products .left-menu .item.price ul li {
   margin-bottom: 5px;
 }
 
-section.page-product .left-menu .item.price ul li a span {
+section.page-products .left-menu .item.price ul li a span {
   color: #000;
   font-size: 13px;
 }
 
-section.page-product .left-menu .item.tags ul li {
+section.page-products .left-menu .item.tags ul li {
   display: inline-block;
   font-size: 13px;
   font-weight: 500;
@@ -10322,7 +10171,7 @@ section.page-product .left-menu .item.tags ul li {
   font-size: 16px;
 }
 
-section.page-product {
+section.page {
   margin: 40px 0;
 }
 

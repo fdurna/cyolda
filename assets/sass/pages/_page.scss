@@ -1,6 +1,8 @@
 section {
+    &.page {
+        margin:40px 0;
+    }
    &.page-product {
-       margin:40px 0;
        .product-item {
            padding-left: 10px;
            padding-right: 10px;

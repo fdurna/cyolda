@@ -14,7 +14,6 @@
 
 // Components
 @import 'components/main-banner'; // Theme: Home Big Banner
-@import 'components/roadmap'; // Theme: Roadmap
 @import 'components/sub-page-banner'; // Theme: Home Big Banner
 
 // Page Components
@@ -22,6 +21,7 @@
 // Custom Components
 @import 'components/tab-menu';
 @import 'components/product';
+@import 'components/products-detail-info';
 @import 'components/left-menu';
 
 
@@ -30,7 +30,7 @@
 @import 'pages/home';
 
 //Product-list
-@import 'pages/product-list'; 
+@import 'pages/page'; 
 
 // Contact
 @import 'pages/contact';
