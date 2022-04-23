@@ -8,7 +8,7 @@
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
   <link rel="icon" type="image/x-icon" href="./assets/img/layout/favicon.ico" />
-
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
 </head>
@@ -70,12 +70,43 @@
     <section class="page page-product-details">
       <div class="container">
         <div class="row">
-          <div class="col-md-7">
-            <div class="swiper">
-              swiper
+          <div class="col-md-7 col-sm-12">
+            <div class="swiper-container">
+              <div thumbsSlider="" class="swiper productDetailTumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/img/subpages/product-detail/product-detail-sub-1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/subpages/product-detail/product-detail-sub-2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/subpages/product-detail/product-detail-sub-3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/subpages/product-detail/product-detail-sub-4.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="swiper productDetailSwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./assets/img/subpages/product-detail/product-detail-1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/subpages/product-detail/product-detail-1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/subpages/product-detail/product-detail-1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./assets/img/subpages/product-detail/product-detail-1.png" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 col-sm-12">
             <div class="info">
               <div class="title-and-rating">
                 <div class="title">
@@ -285,7 +316,28 @@
   <script src="./assets/js/jquery-3.4.1.min.js"></script>
   <script src="./assets/js/jquery.selectric.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
   <script src="./assets/js/custom.js"></script>
+  <script>
+    var swiper = new Swiper(".productDetailTumbs", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".productDetailSwiper", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+        slideThumbActiveClass: 'swiper-slide-thumb-active',
+        thumbsContainerClass: 'swiper-container-thumbs'
+      },
+    });
+  </script>
 </body>
 
 </html>

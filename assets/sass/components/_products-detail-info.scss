@@ -1,179 +1,232 @@
-@import '../utilities/variables';
+@import "../utilities/variables";
 
 section {
-    &.page-product-details {
-        .swiper {
-    
+  &.page-product-details {
+      .row {
+          align-items: center;
+      }
+      .swiper-container {
+          display: flex;
+          @media (max-width: $screenmd) {
+            flex-direction: column-reverse;
+            margin-bottom: 5px;
         }
-        .info {
-            .title-and-rating {
-                display: flex;
-                align-items: center;
-                justify-content:space-between;
-                margin-bottom: 15px;
+        .swiper {
+            &.productDetailTumbs {
+                width:100px;
+                height:400px;
+                padding: 10px 0;
+                
+                box-sizing: border-box;
+                
+                margin:inherit;
+                margin-right:10px;
+                padding-top: 0;
                 @media (max-width: $screenmd) {
-                   flex-direction: column;
+                    width: 100%;
+                    height: 100px !important;
+                    margin-top:5px;
                 }
-                .title {
-                    h1 {
-                        font-size: 20px;
+                .swiper-wrapper {
+                    flex-direction: column;
+                    @media (max-width: $screenmd) {
+                        flex-direction: row;
                     }
-                }
-                .rating {
-                    display: flex;
-                    align-items: center;
-                    span {
-                        font-size: 12px;
-                        color:$black;
-                        font-weight: 500;
-                    }
-                }
-            }
-           .price {
-               margin-bottom: 15px;
-               span {
-                  font-weight: 500;
-                   &.fix {
-                    font-size: 30px;
-                    margin-right:10px;
-                    color:$black;
-                   }
-                   &.discount {
-                    font-size: 20px;
-                    color:#c9c9c9;
-                    text-decoration: line-through;
-                   }
-               }
-           }
-           .more {
-               margin-bottom: 15px;
-               p {
-                   font-size: 13px;
-                   color:$black;
-                   a {
-                    font-size: 13px;
-                    font-weight: 500;
-                    color:$black;
-                   }
-               }
-           } 
-           .form {
-               margin-bottom: 15px;
-               display: flex;
-               align-items: center;
-               flex-direction: column;
-               .location {
-                   width: 100%;
-                   height:45px;
-                   line-height: 45px;
-                   margin-bottom: 15px;
-                   font-size: 14px;
-                   padding:10px;
-                   border-radius: 4px;
-                   background-color:#f4f5f7;
-                   border:1px solid #d7d7d7;
-                   color:$black;
-               }
-               .buttons {
-                   width:100%;
-                   display: flex;
-                   align-items: center;
-                   justify-content:center;
-                   @media (max-width: $screenmd) {
-                        flex-direction: column;
-                    }
-                   a {
-                        &.order {
-                            width:50%;
-                        }
-                        &.heart {
-                            border:1px solid #c9c9c9;
-                            border-radius: 4px;
-                            width: 15%;
-                            margin: 0 15px;
-                            @media (max-width: $screenmd) {
-                                margin:15px 0;
-                            }
-                        }
-                        &.share {
-                            width:35%;
-                        }
+                    .swiper-slide {
+                        width: 100% !important;
+                        height: 90px;
+                        opacity: 0.4;
+                        margin-right: 0 !important;
+                        margin-bottom: 10px;
+                        border:1px solid transparent;
                         @media (max-width: $screenmd) {
-                            width:100% !important;
+                            width: 72px !important;
                         }
-                   }
-               }
-           }
-           .icons {
-               display: flex;
-               align-items: center;
-               justify-content:flex-start;
-               margin-bottom: 15px;
-               ul {
-                   li {
-                        display: inline-block;
-                        margin-right:5px;
-                        margin-left:0px;
-                        i {
-                            margin-right: 5px;
-                        }
-                        span {
-                            font-size: 13px;
-                            font-weight: 500;
-                            color:$black;
+                        &.swiper-slide-thumb-active {
+                            opacity: 1;
+                            border-color: $orange;
                         }
                     }
-               }
-           }
-           .code {
-               div {
-                   span {
-                    font-size: 13px;
-                    font-weight: 500;
-                       &:first-child {
-                           color:$black;
-                       }
-                       &:last-child {
-                        color:#c9c9c9;
-                    }
-                   }
-               }
-           }
+                }
+            
+                
+            }
+            &.productDetailSwiper {
+                width: 100%;
+                height: 485px;
+                cursor: grab;
+            }
         }
     }
-}
 
+    .info {
+      .title-and-rating {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        @media (max-width: $screenmd) {
+          flex-direction: column;
+        }
+        .title {
+          h1 {
+            font-size: 20px;
+          }
+        }
+        .rating {
+          display: flex;
+          align-items: center;
+          span {
+            font-size: 12px;
+            color: $black;
+            font-weight: 500;
+          }
+        }
+      }
+      .price {
+        margin-bottom: 15px;
+        span {
+          font-weight: 500;
+          &.fix {
+            font-size: 30px;
+            margin-right: 10px;
+            color: $black;
+          }
+          &.discount {
+            font-size: 20px;
+            color: #c9c9c9;
+            text-decoration: line-through;
+          }
+        }
+      }
+      .more {
+        margin-bottom: 15px;
+        p {
+          font-size: 13px;
+          color: $black;
+          a {
+            font-size: 13px;
+            font-weight: 500;
+            color: $black;
+          }
+        }
+      }
+      .form {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .location {
+          width: 100%;
+          height: 45px;
+          line-height: 45px;
+          margin-bottom: 15px;
+          font-size: 14px;
+          padding: 10px;
+          border-radius: 4px;
+          background-color: #f4f5f7;
+          border: 1px solid #d7d7d7;
+          color: $black;
+        }
+        .buttons {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @media (max-width: $screenmd) {
+            flex-direction: column;
+          }
+          a {
+            &.order {
+              width: 50%;
+            }
+            &.heart {
+              border: 1px solid #c9c9c9;
+              border-radius: 4px;
+              width: 15%;
+              margin: 0 15px;
+              @media (max-width: $screenmd) {
+                margin: 15px 0;
+              }
+            }
+            &.share {
+              width: 35%;
+            }
+            @media (max-width: $screenmd) {
+              width: 100% !important;
+            }
+          }
+        }
+      }
+      .icons {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 15px;
+        ul {
+          li {
+            display: inline-block;
+            margin-right: 5px;
+            margin-left: 0px;
+            i {
+              margin-right: 5px;
+            }
+            span {
+              font-size: 13px;
+              font-weight: 500;
+              color: $black;
+            }
+          }
+        }
+      }
+      .code {
+        div {
+          span {
+            font-size: 13px;
+            font-weight: 500;
+            &:first-child {
+              color: $black;
+            }
+            &:last-child {
+              color: #c9c9c9;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 .rate {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 .rate:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
+  position: absolute;
+  top: -9999px;
 }
 .rate:not(:checked) > label {
-    float:right;
-    width:1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:20px;
-    color:#ccc;
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ccc;
 }
 .rate:not(:checked) > label:before {
-    content: '★ ';
+  content: "★ ";
 }
 .rate > input:checked ~ label {
-    color: #ffc700;    
+  color: #ffc700;
 }
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
-    color: #deb217;  
+  color: #deb217;
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
 .rate > input:checked ~ label:hover,
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
-    color: #c59b08;
+  color: #c59b08;
 }
