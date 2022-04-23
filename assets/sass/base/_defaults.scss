@@ -23,10 +23,10 @@
   color:$black;
   &:hover {
     background-color:$orange;
+    border-color:$orange;
     color:$white;
-    &:hover {
-      background-color:$black;
-      color:$white;
+    span {
+      color:$white !important;
     }
   }
 }
