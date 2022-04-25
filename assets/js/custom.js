@@ -27,7 +27,7 @@ var moreProduct = function () {
 };
 // moreProduct FAQ End
 
-// counterDown FAQ
+// counterDown 
 var counterDown = function () {
   const second = 1000,
     minute = second * 60,
@@ -64,4 +64,5 @@ var counterDown = function () {
         ));
     }, 0);
 };
-// counterDown FAQ End
+// counterDown FAQ 
+

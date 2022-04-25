@@ -54,6 +54,64 @@
                 }
             }
         }
+        
+    }
+    .checkout-bread-crumb {
+        ul {
+            display: flex;
+            align-items: center;
+            @media (max-width: $screenmd) {
+               flex-direction: column;
+            }
+            li {
+                position: relative;
+                text-transform: uppercase;
+                margin-right: 10px;
+                @media (max-width: $screenmd) {
+                    margin-right: 0;
+                    margin-bottom: 4px;
+                 }
+                a {
+                    display: flex;
+                    align-items: center;
+                    @media (max-width: $screenmd) {
+                        flex-direction: column;
+                     }
+                    span {
+                        color:#8b8b8b;
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                    i {
+                        width:30px;
+                        height:1px;
+                        background-color:#c9c9c9;
+                        display:block;
+                        margin-left:10px;
+                        @media (max-width: $screenmd) {
+                            margin-left: 0;
+                         }
+                    }
+                }
+                &.active {
+                    a {
+                        span {
+                            color:$black;
+                        }
+                    }
+                }
+                &.prev {
+                    a {
+                        span {
+                            color:$black;
+                        }
+                        i {
+                            background-color:$orange;
+                        }
+                    }
+                }
+            }
+        }
     }
     .select {
         label {
