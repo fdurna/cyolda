@@ -1,0 +1,135 @@
+@import '../utilities/_variables';
+
+.account {
+    .box {
+        border-radius: 4px;
+        border:1px solid #dddddd;
+        @media (max-width: $screenmd) {
+            margin-bottom: 20px;
+         }
+        .menu {
+            li {
+                width:100%;
+                display:block;
+                position: relative;
+                a {
+                    padding:12px 0 12px 50px;
+                    border-bottom: 1px solid #dddddd;
+                    width:100%;
+                    display:block;
+                    span {
+                        color:$black;
+                        font-size: 13px;
+                        font-weight:400;     
+                    }
+                    i {
+                        &.icon {
+                            position: absolute;
+                            top:10px;
+                        }
+                        &:first-child {
+                            left:15px;
+                        }
+                        &.icon-arrow {
+                            right:10px;
+                        }
+                    }
+                }
+                &:last-child {
+                    a {
+                        border-bottom: none;
+                    }
+                }
+                &.active {
+
+                }
+            }
+        }
+        .content {
+            padding:20px;
+            .title {
+                display: flex;
+                align-items: center;
+                justify-content:space-between;
+                padding-bottom:15px;
+                border-bottom: 1px dashed #dddddd;
+                h2 {
+                    color:$black;
+                    font-size:20px;
+                }
+                span {
+                    color:#c3c3c3;
+                    font-size: 14px;
+                    font-weight: 500;
+                    @media (max-width: $screenmd) {
+                        margin-top:7px;
+                     }
+                }
+                @media (max-width: $screenmd) {
+                   flex-direction: column;
+                   text-align: center;
+                }
+            }
+            .gift {
+                border-radius: 4px;
+                padding:15px;
+                border:1px solid #dddddd;
+                @media (max-width: $screenmd) {
+                    margin-bottom: 20px;
+                 }
+                .price-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content:space-between;
+                    h6 {
+                        font-size: 22px;
+                        color:$black;
+                    }   
+                    i {
+
+                    }
+                }
+                p {
+                    margin:15px 0;
+                    font-size: 13px;
+                    color:#565656;
+                }
+                a {
+                    color:$orange;
+                    font-weight: 500;
+                }
+            }
+            .add-new {
+                border-radius: 4px;
+                border:1px solid #dddddd;
+                height:150px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content:center;
+                    height:100%;
+                    flex-direction: column;
+                    i {
+                        width:40px;
+                        height:40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        border:1px solid $black;
+                        border-radius: 4px;
+                    }
+                    span {
+                        color:$black;
+                        margin-top:10px;
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .label-normal {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

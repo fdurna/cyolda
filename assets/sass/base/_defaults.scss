@@ -53,6 +53,14 @@
   border:1px solid #c9c9c9;
   color:$black;
 }
+.check-normal {
+  width:100%;
+  width:15px;
+  height:15px;
+  line-height:20px;
+  border:1px solid #c9c9c9;
+  color:$black;
+}
 .label-normal {
   font-size: 14px;
   color:$black;
@@ -67,6 +75,13 @@ span.required {
   color:red;
   font-size: 14px;
 }
+textarea {
+  width: 100%;
+  padding:15px;
+  height:120px;
+  border-color:#e1e1e1;
+}
+
 /*form end*/
 .two-grids {
   display: flex;

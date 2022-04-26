@@ -8,6 +8,29 @@
       font-size: 18px;
     }
   }
+
+  .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-bottom:8px;
+    h6 {
+      font-size: 14px;
+      color: #000;
+      font-weight: 500;
+    }
+    span {
+      font-size: 25px;
+      font-weight: 300;
+      color:#c9c9c9;
+    }
+    &.orange {
+      span {
+        color:$orange;
+      }
+    }
+  }
+
   .cart-table {
     table {
       width: 100%;
@@ -203,6 +226,11 @@
                 }
               }
             }
+            &.active {
+              span , strong {
+                color:$orange;
+              }
+            }
             &:last-child {
               border-bottom: none;
             }
@@ -222,10 +250,95 @@
       }
     }
     p {
-        font-weight: 500;
-        font-size: 14px;
-        color:$black;
-        margin:20px 0;
+      font-weight: 500;
+      font-size: 14px;
+      color: $black;
+      margin: 20px 0;
+    }
+  }
+
+  .envelope-type {
+    .item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 4px;
+      padding:15px;
+      border:1px solid #e1e1e1;
+      @media (max-width: $screenmd) {
+        margin-bottom:10px;
+      }
+      span {
+        &.left {
+          font-size: 14px;
+          font-weight: 700;
+          color:$black;
+        }
+        &.right {
+          font-size: 23px;
+          font-weight: 300;
+          color:#c9c9c9;
+        }
+      }
+      &.active {
+        border-color:$orange;
+        span {
+          &.right {
+            color:$orange;
+          }
+        }
+      }
+    }
+    .env-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+      @media (max-width: $screenmd) {
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+      .item {
+        width:100%;
+        &:nth-child(2) {
+          margin:0 15px;
+          @media (max-width: $screenmd) {
+            margin-bottom:10px;
+          }
+        }
+      }
+    }
+  }
+
+  .envelopeSwiper {
+    height:280px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border:1px solid #e1e1e1;
+    .swiper-wrapper {
+      .swiper-slide {
+        img {
+          width:200px;
+          height:200px;
+        }
+      }
+    }
+    .swiper-button-prev , .swiper-button-next {
+      color:$black !important;
+    }
+  }
+  .visa {
+    @media (max-width: $screenmd) {
+      margin-bottom:30px;
+    }
+    img {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 14px;
+      color:#d1d1d1;
+      font-weight: 500;
     }
   }
 }
