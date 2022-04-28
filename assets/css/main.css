@@ -10083,115 +10083,6 @@ footer .footer .copyright .social ul li a {
   color: #ddb14a;
 }
 
-.cart-checkout .cart-table table {
-  width: 100%;
-}
-
-.cart-checkout .cart-table table thead > tr {
-  background-color: #f4f5f7;
-}
-
-.cart-checkout .cart-table table thead > tr th {
-  border-top: medium none;
-  font-size: 18px;
-  text-transform: capitalize;
-  vertical-align: middle;
-  white-space: nowrap;
-  padding: 10px 0;
-  color: #000;
-  letter-spacing: 1px;
-  font-weight: 500;
-  text-transform: capitalize;
-}
-
-.cart-checkout .cart-table table thead > tr th .name {
-  max-width: 400px;
-}
-
-.cart-checkout .cart-table table thead > tr th .price {
-  max-width: 300px;
-}
-
-.cart-checkout .cart-table table tbody > tr td {
-  font-size: 14px;
-  padding: 20px 0px 20px;
-  border-top: 1px solid #ddd;
-}
-
-.cart-checkout .cart-table table tbody > tr td.remove {
-  width: 50px;
-}
-
-.cart-checkout .cart-table table tbody > tr td.remove a {
-  color: #777777;
-}
-
-.cart-checkout .cart-table table tbody > tr td.image {
-  width: 100px;
-}
-
-@media (max-width: 991px) {
-  .cart-checkout .cart-table table tbody > tr td.image img {
-    max-width: inherit;
-  }
-}
-
-.cart-checkout .cart-table table tbody > tr td.name {
-  width: 370px;
-}
-
-@media (max-width: 991px) {
-  .cart-checkout .cart-table table tbody > tr td.name {
-    min-width: 200px;
-    padding-left: 20px;
-    padding-right: 0px;
-  }
-}
-
-.cart-checkout .cart-table table tbody > tr td.name a {
-  font-size: 16px;
-  font-weight: 500;
-  color: #000;
-}
-
-.cart-checkout .cart-table table tbody > tr td.price {
-  min-width: 250px;
-}
-
-.cart-checkout .cart-table table tbody > tr td.price span {
-  color: #1f2226;
-  font-weight: 500;
-}
-
-.cart-checkout .cart-table table tbody > tr td.quality .plus-minus {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.cart-checkout .cart-table table tbody > tr td.quality .plus-minus input {
-  margin: 0 10px;
-  width: 40px;
-  text-align: center;
-  border: none;
-}
-
-.cart-checkout .cart-table table tbody > tr td.quality .plus-minus .qtybutton {
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 13px;
-  border: none;
-  background-color: transparent;
-}
-
-.cart-checkout .cart-table table tbody > tr td.total {
-  min-width: 70px;
-}
-
-.cart-checkout .cart-table table tbody > tr td.total span {
-  font-weight: 600;
-}
-
 .cart-checkout .buttons {
   margin: 50px 0;
   display: flex;
@@ -10263,99 +10154,6 @@ footer .footer .copyright .social ul li a {
   .cart-checkout .coupon button {
     max-width: 100%;
   }
-}
-
-@media (max-width: 991px) {
-  .cart-checkout .totals {
-    max-width: 100%;
-  }
-}
-
-.cart-checkout .totals .box {
-  margin-bottom: 20px;
-}
-
-.cart-checkout .totals .box .box-content {
-  border: 1px solid #bfbfbf;
-  background: #f9f9f9;
-  padding: 15px 30px;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item {
-  border-bottom: 1px solid #c9c9c9;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item span,
-.cart-checkout .totals .box .box-content .item-list .item strong {
-  font-size: 17px;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item strong {
-  font-weight: 500;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item .sub {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 0;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item.fdc {
-  flex-direction: column;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item.fdc .sub {
-  border-bottom: 1px solid #c9c9c9;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item.fdc ul {
-  margin: 20px 0;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item.fdc ul li {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item.fdc ul li:last-child {
-  margin-bottom: 0;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item.fdc ul li span,
-.cart-checkout .totals .box .box-content .item-list .item.fdc ul li strong {
-  font-size: 14px;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item.active span, .cart-checkout .totals .box .box-content .item-list .item.active strong {
-  color: #ddb14a;
-}
-
-.cart-checkout .totals .box .box-content .item-list .item:last-child {
-  border-bottom: none;
-}
-
-.cart-checkout .totals .box .box-content .info {
-  padding-top: 20px;
-  border-top: 1px solid #c9c9c9;
-}
-
-.cart-checkout .totals .box .box-content .info h6 {
-  margin-bottom: 12px;
-}
-
-.cart-checkout .totals .box .box-content .info p {
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-
-.cart-checkout .totals p {
-  font-weight: 500;
-  font-size: 14px;
-  color: #000;
-  margin: 20px 0;
 }
 
 .cart-checkout .envelope-type .item {
@@ -10452,6 +10250,210 @@ footer .footer .copyright .social ul li a {
   font-size: 14px;
   color: #d1d1d1;
   font-weight: 500;
+}
+
+@media (max-width: 991px) {
+  .cart-checkout .totals, .orders .totals {
+    max-width: 100%;
+  }
+}
+
+.cart-checkout .totals .box, .orders .totals .box {
+  margin-bottom: 20px;
+}
+
+.cart-checkout .totals .box .box-content, .orders .totals .box .box-content {
+  border: 1px solid #bfbfbf;
+  background: #f9f9f9;
+  padding: 15px 30px;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item, .orders .totals .box .box-content .item-list .item {
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item span,
+.cart-checkout .totals .box .box-content .item-list .item strong, .orders .totals .box .box-content .item-list .item span,
+.orders .totals .box .box-content .item-list .item strong {
+  font-size: 17px;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item strong, .orders .totals .box .box-content .item-list .item strong {
+  font-weight: 500;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item .sub, .orders .totals .box .box-content .item-list .item .sub {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item.fdc, .orders .totals .box .box-content .item-list .item.fdc {
+  flex-direction: column;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item.fdc .sub, .orders .totals .box .box-content .item-list .item.fdc .sub {
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item.fdc ul, .orders .totals .box .box-content .item-list .item.fdc ul {
+  margin: 20px 0;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item.fdc ul li, .orders .totals .box .box-content .item-list .item.fdc ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item.fdc ul li:last-child, .orders .totals .box .box-content .item-list .item.fdc ul li:last-child {
+  margin-bottom: 0;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item.fdc ul li span,
+.cart-checkout .totals .box .box-content .item-list .item.fdc ul li strong, .orders .totals .box .box-content .item-list .item.fdc ul li span,
+.orders .totals .box .box-content .item-list .item.fdc ul li strong {
+  font-size: 14px;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item.active span, .cart-checkout .totals .box .box-content .item-list .item.active strong, .orders .totals .box .box-content .item-list .item.active span, .orders .totals .box .box-content .item-list .item.active strong {
+  color: #ddb14a;
+}
+
+.cart-checkout .totals .box .box-content .item-list .item:last-child, .orders .totals .box .box-content .item-list .item:last-child {
+  border-bottom: none;
+}
+
+.cart-checkout .totals .box .box-content .info, .orders .totals .box .box-content .info {
+  padding-top: 20px;
+  border-top: 1px solid #c9c9c9;
+}
+
+.cart-checkout .totals .box .box-content .info h6, .orders .totals .box .box-content .info h6 {
+  margin-bottom: 12px;
+}
+
+.cart-checkout .totals .box .box-content .info p, .orders .totals .box .box-content .info p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.cart-checkout .totals p, .orders .totals p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #000;
+  margin: 20px 0;
+}
+
+.cart-table table, .orders table {
+  width: 100%;
+}
+
+.cart-table table thead > tr, .orders table thead > tr {
+  background-color: #f4f5f7;
+}
+
+.cart-table table thead > tr th, .orders table thead > tr th {
+  border-top: medium none;
+  font-size: 18px;
+  text-transform: capitalize;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 10px 0;
+  color: #000;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.cart-table table thead > tr th .name, .orders table thead > tr th .name {
+  max-width: 400px;
+}
+
+.cart-table table thead > tr th .price, .orders table thead > tr th .price {
+  max-width: 300px;
+}
+
+.cart-table table tbody > tr td, .orders table tbody > tr td {
+  font-size: 14px;
+  padding: 20px 0px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.cart-table table tbody > tr td.remove, .orders table tbody > tr td.remove {
+  width: 50px;
+}
+
+.cart-table table tbody > tr td.remove a, .orders table tbody > tr td.remove a {
+  color: #777777;
+}
+
+.cart-table table tbody > tr td.image, .orders table tbody > tr td.image {
+  width: 100px;
+}
+
+@media (max-width: 991px) {
+  .cart-table table tbody > tr td.image img, .orders table tbody > tr td.image img {
+    max-width: inherit;
+  }
+}
+
+.cart-table table tbody > tr td.name, .orders table tbody > tr td.name {
+  width: 370px;
+}
+
+@media (max-width: 991px) {
+  .cart-table table tbody > tr td.name, .orders table tbody > tr td.name {
+    min-width: 200px;
+    padding-left: 20px;
+    padding-right: 0px;
+  }
+}
+
+.cart-table table tbody > tr td.name a, .orders table tbody > tr td.name a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.cart-table table tbody > tr td.price, .orders table tbody > tr td.price {
+  min-width: 250px;
+}
+
+.cart-table table tbody > tr td.price span, .orders table tbody > tr td.price span {
+  color: #1f2226;
+  font-weight: 500;
+}
+
+.cart-table table tbody > tr td.quality .plus-minus, .orders table tbody > tr td.quality .plus-minus {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cart-table table tbody > tr td.quality .plus-minus input, .orders table tbody > tr td.quality .plus-minus input {
+  margin: 0 10px;
+  width: 40px;
+  text-align: center;
+  border: none;
+}
+
+.cart-table table tbody > tr td.quality .plus-minus .qtybutton, .orders table tbody > tr td.quality .plus-minus .qtybutton {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 13px;
+  border: none;
+  background-color: transparent;
+}
+
+.cart-table table tbody > tr td.total, .orders table tbody > tr td.total {
+  min-width: 70px;
+}
+
+.cart-table table tbody > tr td.total span, .orders table tbody > tr td.total span {
+  font-weight: 600;
 }
 
 .account .box {
@@ -10601,6 +10603,136 @@ footer .footer .copyright .social ul li a {
   margin-top: 10px;
   font-weight: 500;
   font-size: 14px;
+}
+
+.account .box .content .remind {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  padding: 18px 15px;
+}
+
+.account .box .content .remind .left {
+  display: flex;
+  align-items: center;
+}
+
+.account .box .content .remind .left i {
+  margin-right: 25px;
+}
+
+.account .box .content .remind .left .info h6 {
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.account .box .content .remind .left .info span {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.account .box .content .remind .right a {
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+}
+
+.account .box .content .remind .right a:first-child {
+  margin-right: 5px;
+}
+
+.account .box .content .remind .right a:hover {
+  color: #ddb14a;
+}
+
+.account .box .content .orders .title .form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.account .box .content .orders .title .form-group label {
+  margin-right: 0;
+}
+
+.account .box .content .orders .title .form-group select {
+  border: none;
+}
+
+.account .box .content .orders .box .box-content {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 991px) {
+  .account .box .content .orders .box .box-content {
+    flex-direction: column;
+  }
+}
+
+.account .box .content .orders .box .box-content > div {
+  width: 50%;
+}
+
+@media (max-width: 991px) {
+  .account .box .content .orders .box .box-content > div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .account .box .content .orders .box .box-content .user-info {
+    text-align: center;
+  }
+}
+
+.account .box .content .orders .box .box-content .user-info h5 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.account .box .content .orders .box .box-content .user-info p {
+  margin: 10px 0;
+}
+
+.account .box .content .orders .box .box-content .user-info .link {
+  margin-top: 30px;
+}
+
+.account .box .content .orders .box .box-content .user-info .link a {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: underline;
+}
+
+.account .box .content .orders .box .box-content .user-info .link a:last-child {
+  margin-left: 10px;
+  color: #ddb14a;
+}
+
+.account .box .content .orders table thead tr th.total {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.account .box .content .orders table tbody > tr td.image {
+  width: 280px;
+}
+
+.account .box .content .orders table tbody > tr td.price {
+  min-width: 100px;
+}
+
+.account .box .content .orders table tbody > tr td.total {
+  text-align: right;
+  padding-right: 20px;
+  min-width: 250px;
 }
 
 .account .box .content .label-normal {
