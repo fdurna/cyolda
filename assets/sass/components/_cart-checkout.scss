@@ -287,6 +287,9 @@
         width: 50px;
         a {
           color: #777777;
+          i {
+            transform: rotate(90deg);
+          }
         }
       }
       td.image {
@@ -341,6 +344,15 @@
         min-width: 70px;
         span {
           font-weight: 600;
+        }
+      }
+      &.active {
+        td.remove {
+          a {
+            i {
+              transform: rotate(270deg);
+            }
+          }
         }
       }
     }

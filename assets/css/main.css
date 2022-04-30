@@ -2,6 +2,67 @@
 i.icon {
   background-repeat: no-repeat;
   display: block;
+  background-size: contain;
+}
+
+i.tick-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img//icons/tick.svg");
+}
+
+i.notification-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img//icons/notification.svg");
+}
+
+i.logout-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img//icons/logout.svg");
+}
+
+i.edit-icon {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img//icons/edit.svg");
+}
+
+i.date-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img//icons/date.svg");
+}
+
+i.close-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img//icons/close.svg");
+}
+
+i.car-icon {
+  width: 30px;
+  height: 18px;
+  background-image: url("../img//icons/car.svg");
+}
+
+i.arrow-small-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img//icons/arrow-small.svg");
+}
+
+i.arrow-middle-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img//icons/arrow-middle.svg");
+}
+
+i.add-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img//icons/add.svg");
 }
 
 i.search-icon {
@@ -20,6 +81,12 @@ i.user-icon {
   width: 20px;
   height: 24px;
   background-image: url("../img//icons/user.svg");
+}
+
+i.dashboard-icon {
+  width: 25px;
+  height: 24px;
+  background-image: url("../img//icons/dashboard.svg");
 }
 
 i.basket-icon {
@@ -46,6 +113,12 @@ i.shopping-icon {
   background-image: url("../img//icons/shopping.svg");
 }
 
+i.payment-icon {
+  width: 25px;
+  height: 18px;
+  background-image: url("../img//icons/payment.svg");
+}
+
 i.location-icon {
   width: 19px;
   height: 25px;
@@ -55,7 +128,7 @@ i.location-icon {
 i.phone-icon {
   width: 24px;
   height: 22px;
-  background-image: url("../img//icons/telephone.svg");
+  background-image: url("../img//icons/phone.svg");
 }
 
 i.facebook-icon {
@@ -9632,6 +9705,7 @@ footer .footer .copyright .social h6 {
 }
 
 footer .footer .copyright .social ul {
+  display: flex;
   margin-left: 15px;
 }
 
@@ -10390,6 +10464,10 @@ footer .footer .copyright .social ul li a {
   color: #777777;
 }
 
+.cart-table table tbody > tr td.remove a i, .orders table tbody > tr td.remove a i {
+  transform: rotate(90deg);
+}
+
 .cart-table table tbody > tr td.image, .orders table tbody > tr td.image {
   width: 100px;
 }
@@ -10456,6 +10534,10 @@ footer .footer .copyright .social ul li a {
   font-weight: 600;
 }
 
+.cart-table table tbody > tr.active td.remove a i, .orders table tbody > tr.active td.remove a i {
+  transform: rotate(270deg);
+}
+
 .account .box {
   border-radius: 4px;
   border: 1px solid #dddddd;
@@ -10488,7 +10570,9 @@ footer .footer .copyright .social ul li a {
 
 .account .box .menu li a i.icon {
   position: absolute;
-  top: 10px;
+  top: 13px;
+  width: 18px;
+  height: 18px;
 }
 
 .account .box .menu li a i:first-child {
@@ -10501,6 +10585,34 @@ footer .footer .copyright .social ul li a {
 
 .account .box .menu li:last-child a {
   border-bottom: none;
+}
+
+.account .box .menu li:hover a span, .account .box .menu li.active a span {
+  color: #ddb14a;
+}
+
+.account .box .menu li:hover a i.dashboard-icon, .account .box .menu li.active a i.dashboard-icon {
+  background-image: url("../img//icons/dashboard-hover.svg");
+}
+
+.account .box .menu li:hover a i.user-icon, .account .box .menu li.active a i.user-icon {
+  background-image: url("../img//icons/user-hover.svg");
+}
+
+.account .box .menu li:hover a i.basket-icon, .account .box .menu li.active a i.basket-icon {
+  background-image: url("../img//icons/basket-hover.svg");
+}
+
+.account .box .menu li:hover a i.payment-icon, .account .box .menu li.active a i.payment-icon {
+  background-image: url("../img//icons/payment-hover.svg");
+}
+
+.account .box .menu li:hover a i.location-icon, .account .box .menu li.active a i.location-icon {
+  background-image: url("../img//icons/location-hover.svg");
+}
+
+.account .box .menu li:hover a i.logout-icon, .account .box .menu li.active a i.logout-icon {
+  background-image: url("../img//icons/logout-hover.svg");
 }
 
 .account .box .content {
@@ -10571,6 +10683,16 @@ footer .footer .copyright .social ul li a {
 .account .box .content .gift a {
   color: #ddb14a;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.account .box .content .gift a i {
+  width: 8px;
+  height: 8px;
+  background-size: contain;
+  margin-left: 7px;
 }
 
 .account .box .content .add-new {
@@ -10588,13 +10710,12 @@ footer .footer .copyright .social ul li a {
 }
 
 .account .box .content .add-new a i {
-  width: 40px;
-  height: 40px;
+  width: 22px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border: 1px solid #000;
   border-radius: 4px;
 }
 
@@ -10621,7 +10742,13 @@ footer .footer .copyright .social ul li a {
   justify-content: space-between;
 }
 
+.account .box .content .edit .button-icon a {
+  display: flex;
+  align-items: center;
+}
+
 .account .box .content .edit .button-icon a span {
+  margin-left: 10px;
   font-size: 12px;
   color: #ddb14a;
   font-weight: 500;
@@ -10654,7 +10781,13 @@ footer .footer .copyright .social ul li a {
   justify-content: space-between;
 }
 
+.account .box .content .address .button-icon a {
+  display: flex;
+  align-items: center;
+}
+
 .account .box .content .address .button-icon a span {
+  margin-left: 10px;
   font-size: 12px;
   color: #ddb14a;
   font-weight: 500;
@@ -10701,6 +10834,11 @@ footer .footer .copyright .social ul li a {
   font-weight: 300;
 }
 
+.account .box .content .remind .right {
+  display: flex;
+  align-items: center;
+}
+
 .account .box .content .remind .right a {
   font-size: 13px;
   font-weight: 500;
@@ -10708,10 +10846,23 @@ footer .footer .copyright .social ul li a {
 }
 
 .account .box .content .remind .right a:first-child {
-  margin-right: 5px;
+  margin-right: 15px;
+}
+
+.account .box .content .remind .right a:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.account .box .content .remind .right a span {
+  margin-left: 7px;
 }
 
 .account .box .content .remind .right a:hover {
+  color: #ddb14a;
+}
+
+.account .box .content .remind .right a:hover span {
   color: #ddb14a;
 }
 
@@ -10977,9 +11128,13 @@ section.page-product-details .info .form .location {
   margin-bottom: 15px;
   font-size: 14px;
   padding: 10px;
+  padding-left: 40px;
   border-radius: 4px;
   background-color: #f4f5f7;
   border: 1px solid #d7d7d7;
+  background-image: url("../img/icons/location.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 8px;
   color: #000;
 }
 
@@ -11117,7 +11272,7 @@ section.page-product-details .info .form .time .box .counter ul li {
 }
 
 section.page-product-details .info .form .time .box .counter ul li:after {
-  content: ':';
+  content: ":";
   position: absolute;
   right: -10px;
   top: 0;
@@ -11181,6 +11336,9 @@ section.page-product-details .info .form .buttons a.order {
 }
 
 section.page-product-details .info .form .buttons a.heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #c9c9c9;
   border-radius: 4px;
   width: 15%;
@@ -11210,9 +11368,17 @@ section.page-product-details .info .icons {
   margin-bottom: 15px;
 }
 
+section.page-product-details .info .icons ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 section.page-product-details .info .icons ul li {
-  display: inline-block;
-  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
   margin-left: 0px;
 }
 

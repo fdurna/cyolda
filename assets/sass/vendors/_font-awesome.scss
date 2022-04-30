@@ -4,6 +4,57 @@ i {
   &.icon {
     background-repeat: no-repeat;
     display:block;
+    background-size: contain;
+  }
+  &.tick-icon {
+    width:24px;
+    height:24px;
+    background-image:url($Img + '/icons/tick.svg')
+  }
+  &.notification-icon {
+    width:24px;
+    height:24px;
+    background-image:url($Img + '/icons/notification.svg')
+  }
+  &.logout-icon {
+    width:24px;
+    height:24px;
+    background-image:url($Img + '/icons/logout.svg')
+  }
+  &.edit-icon {
+    width:18px;
+    height:18px;
+    background-image:url($Img + '/icons/edit.svg')
+  }
+  &.date-icon {
+    width:24px;
+    height:24px;
+    background-image:url($Img + '/icons/date.svg')
+  }
+  &.close-icon {
+    width:24px;
+    height:24px;
+    background-image:url($Img + '/icons/close.svg')
+  }
+  &.car-icon {
+    width:30px;
+    height:18px;
+    background-image:url($Img + '/icons/car.svg')
+  }
+  &.arrow-small-icon {
+    width:24px;
+    height:24px;
+    background-image:url($Img + '/icons/arrow-small.svg')
+  }
+  &.arrow-middle-icon {
+    width:24px;
+    height:24px;
+    background-image:url($Img + '/icons/arrow-middle.svg')
+  }
+  &.add-icon {
+    width:24px;
+    height:24px;
+    background-image:url($Img + '/icons/add.svg')
   }
   &.search-icon {
     width:24px;
@@ -19,6 +70,12 @@ i {
     width:20px;
     height:24px;
     background-image:url($Img + '/icons/user.svg')
+  }
+ 
+  &.dashboard-icon {
+    width:25px;
+    height:24px;
+    background-image:url($Img + '/icons/dashboard.svg');
   }
   &.basket-icon {
     width:20px;
@@ -40,15 +97,21 @@ i {
     height:45px;
     background-image:url($Img + '/icons/shopping.svg')
   }
+  &.payment-icon {
+    width:25px;
+    height:18px;
+    background-image:url($Img + '/icons/payment.svg')
+  }
   &.location-icon {
     width: 19px;
     height: 25px;
     background-image:url($Img + '/icons/location.svg')
   }
+  
   &.phone-icon {
     width: 24px;
     height: 22px;
-    background-image:url($Img + '/icons/telephone.svg')
+    background-image:url($Img + '/icons/phone.svg')
   }
   &.facebook-icon {
     width: 24px;
