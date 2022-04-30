@@ -10605,6 +10605,74 @@ footer .footer .copyright .social ul li a {
   font-size: 14px;
 }
 
+.account .box .content .edit {
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  height: 150px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.account .box .content .edit .button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.account .box .content .edit .button-icon a span {
+  font-size: 12px;
+  color: #ddb14a;
+  font-weight: 500;
+}
+
+.account .box .content .edit .info p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+}
+
+.account .box .content .edit .info span {
+  display: block;
+  margin: 8px 0;
+  font-size: 12px;
+}
+
+.account .box .content .address {
+  border-radius: 4px;
+  border: 1px solid #dddddd;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.account .box .content .address .button-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.account .box .content .address .button-icon a span {
+  font-size: 12px;
+  color: #ddb14a;
+  font-weight: 500;
+}
+
+.account .box .content .address .info p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000;
+}
+
+.account .box .content .address .info span {
+  display: block;
+  margin: 8px 0;
+  font-size: 13px;
+  color: #a3a3a3;
+}
+
 .account .box .content .remind {
   display: flex;
   align-items: center;
@@ -10737,6 +10805,10 @@ footer .footer .copyright .social ul li a {
 
 .account .box .content .label-normal {
   margin-bottom: 0;
+}
+
+.account .box .content .h-250 {
+  height: 250px;
 }
 
 section.page-product-details .row {
