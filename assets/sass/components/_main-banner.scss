@@ -27,10 +27,12 @@
                 h1 {
                     color:$black;
                     font-size: 25px;
+                    font-weight: 500;
                 }
                 h2 {
                     color:$black;
                     font-size: 15px;
+                    font-weight: 300;
                 }
                 @media (max-width: $screenmd) {
                     h1 {

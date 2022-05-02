@@ -1,0 +1,14 @@
+
+fontlar degisecek (font-family: Roboto)
+
+tüm köşeler border-radius 4px olacak örnek products-detail swiper (inputlar)
+
+(products.html) (account-orders.html) sırala default select tıkladıgında border silinsin
+
+products-detail-2.html swiper üste hizalanacak
+
+products-detail-3 - > Bu ürün seçtiğiniz tarih için button link olacak
+
+cart.html -> close icon degısecek guncellendigi zaman
+
+account-address-2.html kutular 3 tane sıgacak sekılde olacak
