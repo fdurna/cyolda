@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.072" height="20.07" viewBox="0 0 20.072 20.07">
+    <defs>
+        <clipPath id="s2kih98aaa">
+            <path data-name="Rectangle 37" style="fill:#ddb14a" d="M0 0h20.072v20.07H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="Group 120">
+        <g data-name="Group 110" style="clip-path:url(#s2kih98aaa)">
+            <path data-name="Path 128" d="M20.072 2.432A2.351 2.351 0 0 0 17.636 0H2.448A2.354 2.354 0 0 0 0 2.441v15.187a2.355 2.355 0 0 0 2.446 2.442h15.169a2.355 2.355 0 0 0 2.457-2.451V2.432M17.6 18.5H2.475a.8.8 0 0 1-.906-.9V2.474a.8.8 0 0 1 .9-.906H17.6a.8.8 0 0 1 .906.9v15.126a.8.8 0 0 1-.9.906" style="fill:#ddb14a"/>
+            <path data-name="Path 129" d="M33.605 26.291a2.137 2.137 0 0 0-1.247-1.65 4.479 4.479 0 0 0-1.166-.286 3.106 3.106 0 0 0-1.948.344 2.809 2.809 0 0 0-.913.825l-.409.559V24.5h-2.2v8.382h2.2v-4.118a5.668 5.668 0 0 1 .086-.994 1.712 1.712 0 0 1 1.537-1.527 1.556 1.556 0 0 1 1.914 1.377 5.358 5.358 0 0 1 .08.874c.006 1.057.005 2.114.005 3.171v1.216h2.252v-1.334c0-1.238 0-2.476-.013-3.714a7.94 7.94 0 0 0-.19-1.545" transform="translate(-17.49 -16.537)" style="fill:#ddb14a"/>
+            <path data-name="Rectangle 36" transform="translate(3.768 7.958)" style="fill:#ddb14a" d="M0 0h2.268v8.382H0z"/>
+            <path data-name="Path 130" d="M12.5 11a1.381 1.381 0 0 0 0 2.761 1.381 1.381 0 0 0 0-2.761" transform="translate(-7.56 -7.476)" style="fill:#ddb14a"/>
+        </g>
+    </g>
+</svg>

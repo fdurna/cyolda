@@ -60,6 +60,9 @@ header {
         
         background: transparent;
         padding-right:0;
+        .search-icon:hover {
+          background-image:url($Img + '/icons/search-hover.svg')
+        }
       }
     }
     .account {
@@ -78,6 +81,17 @@ header {
         position: relative;
 
         min-height: 25px;
+        i {
+          &.user-icon:hover {
+                  background-image:url($Img + '/icons/user-hover.svg')
+          }
+          &.heart-icon:hover {
+              background-image:url($Img + '/icons/heart-hover.svg')
+          }
+          &.basket-icon:hover {
+              background-image:url($Img + '/icons/basket-hover.svg')
+          }
+      }
         &:nth-child(2) {
           margin:0 40px;
         }

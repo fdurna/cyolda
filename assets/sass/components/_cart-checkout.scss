@@ -291,6 +291,16 @@
           color: #777777;
           i {
             transform: rotate(90deg);
+            &.close-icon {
+              &:hover {
+                background-image:url($Img + '/icons/close-hover.svg')
+              }
+            }
+            &.arrow-small-icon {
+              &:hover {
+                background-image:url($Img + '/icons/arrow-small-hover.svg')
+              }
+            }
           }
         }
       }

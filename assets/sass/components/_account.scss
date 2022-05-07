@@ -131,8 +131,15 @@
           i {
             width:8px;
             height:8px;
-            background-size: contain;
+            background-image:url($Img + '/icons/arrow-small-hover.svg');
             margin-left: 7px;
+          }
+        }
+        &:hover {
+          .price-icon {
+            i {
+              background-image:url($Img + '/icons/gift-hover.svg')
+            }
           }
         }
       }
@@ -162,6 +169,18 @@
             font-size: 14px;
           }
         }
+        &:hover {
+          a {
+            i {
+              &.add-icon {
+                background-image:url($Img + '/icons/add-hover.svg')
+              }
+            }
+            span {
+              color:$orange;
+            }
+          }
+        }
       }
       .edit {
         border-radius: 4px;
@@ -179,7 +198,9 @@
             display: flex;
             align-items: center;
             i {
-
+              &.edit-icon {
+                background-image:url($Img + '/icons/edit-hover.svg')
+              }
             }
             span {
               margin-left: 10px;
@@ -222,7 +243,9 @@
             display: flex;
             align-items: center;
             i {
-
+              &.edit-icon {
+                background-image:url($Img + '/icons/edit-hover.svg')
+              }
             }
             span {
               margin-left:10px;
@@ -294,9 +317,19 @@
             }
             &:hover {
               color: $orange;
+              i {
+                background-image:url($Img + '/icons/edit-hover.svg')
+              }
               span {
                 color:$orange;
               }
+            }
+          }
+        }
+        &:hover {
+          .left {
+            i {
+              background-image:url($Img + '/icons/notification-hover.svg')
             }
           }
         }

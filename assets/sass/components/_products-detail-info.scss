@@ -337,6 +337,13 @@ section {
               @media (max-width: $screenmd) {
                 margin: 15px 0;
               }
+              &:hover {
+                i {
+                  &.heart-icon {
+                    background-image:url($Img + '/icons/heart-hover.svg')
+                  }
+                }
+              }
             }
             &.share {
               width: 35%;

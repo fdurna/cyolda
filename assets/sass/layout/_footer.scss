@@ -167,7 +167,15 @@ footer {
                             margin:0 15px;
                         }
                         i {
-
+                            &.facebook-icon:hover {
+                                    background-image:url($Img + '/icons/facebook-hover.svg')
+                            }
+                            &.instagram-icon:hover {
+                                background-image:url($Img + '/icons/instagram-hover.svg')
+                            }
+                            &.linkedin-icon:hover {
+                                background-image:url($Img + '/icons/linkedin-hover.svg')
+                            }
                         }
                     }   
                 }
@@ -273,7 +281,15 @@ footer {
                         a {
                             color:$black;
                             i {
-
+                                &.facebook-icon:hover {
+                                        background-image:url($Img + '/icons/facebook-hover.svg')
+                                }
+                                &.instagram-icon:hover {
+                                    background-image:url($Img + '/icons/instagram-hover.svg')
+                                }
+                                &.linkedin-icon:hover {
+                                    background-image:url($Img + '/icons/linkedin-hover.svg')
+                                }
                             }
                         }
                     }
