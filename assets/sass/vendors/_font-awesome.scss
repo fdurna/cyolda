@@ -1,136 +1,126 @@
-@import '../utilities/variables';
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?uy2v5x');
+  src:  url('../fonts/icomoon.eot?uy2v5x#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?uy2v5x') format('truetype'),
+    url('../fonts/icomoon.woff?uy2v5x') format('woff'),
+    url('../fonts/icomoon.svg?uy2v5x#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-i {
-  &.icon {
-    background-repeat: no-repeat;
-    display:block;
-    background-size: contain;
-  }
-  &.tick-icon {
-    width:24px;
-    height:24px;
-    background-image:url($Img + '/icons/tick.svg')
-  }
-  &.notification-icon {
-    width:24px;
-    height:24px;
-    background-image:url($Img + '/icons/notification.svg')
-  }
-  &.logout-icon {
-    width:24px;
-    height:24px;
-    background-image:url($Img + '/icons/logout.svg')
-  }
-  &.edit-icon {
-    width:18px;
-    height:18px;
-    background-image:url($Img + '/icons/edit.svg')
-  }
-  &.date-icon {
-    width:24px;
-    height:24px;
-    background-image:url($Img + '/icons/date.svg')
-  }
-  &.close-icon {
-    width:12px;
-    height:12px;
-    background-image:url($Img + '/icons/close.svg')
-  }
-  &.car-icon {
-    width:30px;
-    height:18px;
-    background-image:url($Img + '/icons/car.svg')
-  }
-  &.arrow-small-icon {
-    width:16px;
-    height:16px;
-    background-image:url($Img + '/icons/arrow-small.svg')
-  }
-  &.arrow-middle-icon {
-    width:24px;
-    height:24px;
-    background-image:url($Img + '/icons/arrow-middle.svg')
-  }
-  &.add-icon {
-    width:24px;
-    height:24px;
-    background-image:url($Img + '/icons/add.svg')
-  }
-  &.search-icon {
-    width:24px;
-    height:24px;
-    background-image:url($Img + '/icons/search.svg')
-  }
-  &.heart-icon {
-    width:25px;
-    height:20px;
-    background-image:url($Img + '/icons/heart.svg')
-  }
-  &.user-icon {
-    width:20px;
-    height:24px;
-    background-image:url($Img + '/icons/user.svg')
-  }
- 
-  &.dashboard-icon {
-    width:25px;
-    height:24px;
-    background-image:url($Img + '/icons/dashboard.svg');
-  }
-  &.basket-icon {
-    width:20px;
-    height:25px;
-    background-image:url($Img + '/icons/basket.svg')
-  }
-  &.day-icon {
-    width:50px;
-    height:50px;
-    background-image:url($Img + '/icons/day.svg')
-  }
-  &.support-icon {
-    width:55px;
-    height:50px;
-    background-image:url($Img + '/icons/support.svg')
-  }
-  &.shopping-icon {
-    width:55px;
-    height:45px;
-    background-image:url($Img + '/icons/shopping.svg')
-  }
-  &.payment-icon {
-    width:25px;
-    height:18px;
-    background-image:url($Img + '/icons/payment.svg')
-  }
-  &.location-icon {
-    width: 19px;
-    height: 25px;
-    background-image:url($Img + '/icons/location.svg')
-  }
-  
-  &.phone-icon {
-    width: 24px;
-    height: 22px;
-    background-image:url($Img + '/icons/phone.svg')
-  }
-  &.facebook-icon {
-    width: 24px;
-    height: 22px;
-    background-image:url($Img + '/icons/facebook.svg')
-  }
-  &.instagram-icon {
-    width: 24px;
-    height: 22px;
-    background-image:url($Img + '/icons/instagram.svg')
-  }
-  &.linkedin-icon {
-    width: 24px;
-    height: 22px;
-    background-image:url($Img + '/icons/linkedin.svg')
-  }
-  &.gift-icon {
-    width: 38px;
-    height: 22px;
-    background-image:url($Img + '/icons/gift.svg')
-  }
-} 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-heart:before {
+  content: "\e90b";
+}
+.icon-search:before {
+  content: "\e900";
+  color: #0f4634;
+}
+.icon-tick:before {
+  content: "\e901";
+  color: #0f4634;
+}
+.icon-card:before {
+  content: "\e902";
+  color: #0f4634;
+}
+.icon-shop:before {
+  content: "\e903";
+  color: #0f4634;
+}
+.icon-user:before {
+  content: "\e904";
+  color: #0f4634;
+}
+.icon-dashboard:before {
+  content: "\e905";
+  color: #0f4634;
+}
+.icon-telephone:before {
+  content: "\e906";
+  color: #0f4634;
+}
+.icon-date:before {
+  content: "\e907";
+  color: #0f4634;
+}
+.icon-plus:before {
+  content: "\e908";
+  color: #0f4634;
+}
+.icon-edit:before {
+  content: "\e909";
+  color: #0f4634;
+}
+.icon-bell:before {
+  content: "\e90a";
+  color: #0f4634;
+}
+.icon-car:before {
+  content: "\e90c";
+  color: #0f4634;
+}
+.icon-security:before {
+  content: "\e90d";
+  color: #509259;
+}
+.icon-comment:before {
+  content: "\e90e";
+  color: #509259;
+}
+.icon-cargo:before {
+  content: "\e90f";
+  color: #509259;
+}
+.icon-arrow-light:before {
+  content: "\e910";
+  color: #0f4634;
+}
+.icon-arrow-bold:before {
+  content: "\e911";
+  color: #0f4634;
+}
+.icon-close:before {
+  content: "\e912";
+  color: #0f4634;
+}
+.icon-linkedin:before {
+  content: "\e913";
+  color: #0f4634;
+}
+.icon-instagram:before {
+  content: "\e914";
+  color: #0f4634;
+}
+.icon-facebook:before {
+  content: "\e915";
+  color: #0f4634;
+}
+.icon-gift:before {
+  content: "\e916";
+  color: #0f4634;
+}
+.icon-logout:before {
+  content: "\e917";
+  color: #0f4634;
+}
+.icon-location:before {
+  content: "\e918";
+  color: #0f4634;
+}

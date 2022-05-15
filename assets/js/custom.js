@@ -1,6 +1,7 @@
 // Ready Functions
 $(document).ready(function () {
   moreProduct();
+  header();
   if($(".counter").length) {
     counterDown();
   }
@@ -66,3 +67,17 @@ var counterDown = function () {
 };
 // counterDown FAQ 
 
+
+
+//header 
+var header = function () {
+  $(window).scroll(function() {
+    var winTop = $(window).scrollTop();
+    if (winTop >= 30) {
+      $("header").addClass("sticky-header");
+    } else {
+      $("header").removeClass("sticky-header");
+    }
+  })
+}
+//heeader

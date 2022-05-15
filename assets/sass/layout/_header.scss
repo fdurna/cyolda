@@ -1,48 +1,73 @@
-@import '../utilities/variables';
+@import "../utilities/variables";
 
 header {
-  margin:40px 0;
+  padding: 40px 0;
+  transition: all 0.5s ease;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: white;
+  border-bottom: 1px solid transparent;
   @media (max-width: $screensm) {
-    margin:20px 0;
+    padding: 20px 0;
   }
   .logo-search-account {
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     @media (max-width: $screensm) {
       flex-direction: column;
     }
     .logo {
-      width:25%;
+      width: 25%;
       @media (max-width: $screensm) {
-        width:100%;
+        width: 100%;
         text-align: center !important;
       }
       a {
         img {
-
         }
       }
     }
     .search {
-      width:50%;
+      width: 50%;
       position: relative;
       @media (max-width: $screensm) {
-        width:100%;
-        margin:20px 0;
+        width: 100%;
+        margin: 20px 0;
       }
       input {
         width: 100%;
         padding: 10px 35px 10px 0;
 
         border-width: 0 0 1px;
-        border-color: rgba(0,0,0,.25);
+        border-color: rgba(0, 0, 0, 0.25);
 
-        -webkit-transition: .5s;
-        -o-transition: .5s;
-        transition: .5s;
-        
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s;
+
         background-color: transparent;
+        &:focus {
+          color: $green;
+          border-color: $green;
+        }
+        &:focus::-webkit-input-placeholder {
+          color: transparent;
+        }
+        &:focus:-moz-placeholder {
+          color: transparent;
+        } /* FF 4-18 */
+        &:focus::-moz-placeholder {
+          color: transparent;
+        } /* FF 19+ */
+        &:focus:-ms-input-placeholder {
+          color: transparent;
+        } /* IE 10+ */
+        &::-webkit-search-cancel-button {
+          display: none;
+        }
       }
       button {
         position: absolute;
@@ -57,66 +82,78 @@ header {
         cursor: pointer;
         z-index: 1;
         border: none;
-        
+
         background: transparent;
-        padding-right:0;
+        padding-right: 0;
         .search-icon:hover {
-          background-image:url($Img + '/icons/search-hover.svg')
+          background-image: url($Img + "/icons/search-hover.svg");
         }
       }
     }
     .account {
-      display:flex;
+      display: flex;
       align-items: center;
-      justify-content:flex-end;
+      justify-content: flex-end;
 
-      width:25%;
+      width: 25%;
       @media (max-width: $screensm) {
-        width:100%;
+        width: 100%;
         justify-content: center;
       }
       a {
-        display:flex;
-        align-items: center;
-        position: relative;
-
-        min-height: 25px;
-        i {
-          &.user-icon:hover {
-                  background-image:url($Img + '/icons/user-hover.svg')
-          }
-          &.heart-icon:hover {
-              background-image:url($Img + '/icons/heart-hover.svg')
-          }
-          &.basket-icon:hover {
-              background-image:url($Img + '/icons/basket-hover.svg')
-          }
-      }
-        &:nth-child(2) {
-          margin:0 40px;
+        &.text {
+          color: $green;
+          margin-right: 25px;
         }
-        span {
-          display:flex;
+        &.link {
+          display: flex;
           align-items: center;
-          justify-content:center;
+          position: relative;
+          color: $black;
+          min-height: 25px;
+          margin-right: 30px;
+          &:last-child {
+            margin-right: 0;
+          }
+          i {
+            font-size: 24px;
+            color: $black;
+          }
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-          position: absolute;
-          right: -5px;
-          bottom:-8px;
+            position: absolute;
+            right: -5px;
+            bottom: -5px;
 
-          font-size: 11px;
+            font-size: 11px;
 
-          width:16px;
-          height:16px;
+            width: 16px;
+            height: 16px;
 
-          border-radius: 50%;
-          text-align: center;
-          
-          color:$black;
-          background-color:$orange;
+            border-radius: 50%;
+            text-align: center;
 
+            color: $white;
+            background-color: $green;
+          }
+          &:hover {
+            i {
+              &:before {
+                color: $green;
+              }
+            }
+            span {
+            }
+          }
         }
       }
     }
+  }
+  &.sticky-header {
+    transition: all 0.5s ease;
+    border-color: #ececec;
   }
 }
