@@ -20,7 +20,7 @@ var moreProduct = function () {
   $("#moreProduct").click(function () {
     $("html, body").animate(
       {
-        scrollTop: $("#titlesubtitle").offset().top,
+        scrollTop: $(".product-details-tab-menu").offset().top - 150,
       },
       1000
     );

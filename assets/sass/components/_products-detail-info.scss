@@ -149,21 +149,31 @@ section {
             }
           }
         }
-        .location {
-          width: 100%;
-          height: 45px;
-          line-height: 45px;
-          margin-bottom: 15px;
-          font-size: 14px;
-          padding: 10px;
-          padding-left: 40px;
-          border-radius: 4px;
-          background-color: #f4f5f7;
-          border: 1px solid #d7d7d7;
-          background-image: url('../img/icons/location.svg');
-          background-repeat: no-repeat;
-          background-position:12px 8px;
-          color: $black;
+        .location-cont {
+          width:100%;
+          position: relative;
+          i {
+            position: absolute;
+            font-size: 25px;
+            top: 10px;
+            left: 10px;
+          }
+          .location {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            padding: 10px;
+            padding-left: 40px;
+            border-radius: 4px;
+            background-color: #f4f5f7;
+            border: 1px solid #d7d7d7;
+            background-image: url('../img/icons/location.svg');
+            background-repeat: no-repeat;
+            background-position:12px 8px;
+            color: $black;
+          }
         }
         .date {
           display: flex;
@@ -332,17 +342,13 @@ section {
               justify-content: center;
               border: 1px solid #c9c9c9;
               border-radius: 4px;
-              width: 15%;
+              width: 11%;
               margin: 0 15px;
               @media (max-width: $screenmd) {
                 margin: 15px 0;
               }
-              &:hover {
-                i {
-                  &.heart-icon {
-                    background-image:url($Img + '/icons/heart-hover.svg')
-                  }
-                }
+              i {
+                font-size:19px;
               }
             }
             &.share {
@@ -372,9 +378,13 @@ section {
             margin-left: 0px;
             i {
               margin-right: 5px;
+              &:before {
+                color:$orange;
+              }
             }
             span {
               font-size: 12px;
+              line-height: 16px;
               font-weight: 500;
               color: $black;
             }

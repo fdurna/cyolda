@@ -20,40 +20,43 @@
   </div>
   <!-- Top scroll End -->
 
-  <!-- Header Start -->
-  <header>
-    <div class="container">
-      <div class="logo-search-account">
-        <div class="logo text-left">
-          <a>
-            logo
-          </a>
-        </div>
-        <div class="search">
-          <form>
-            <input type="search" placeholder=" Nereye göndermek istiyorsun? Mahalle, İşyeri vb." />
-            <button>
-              <i class="icon search-icon"></i>
-            </button>
-          </form>
-        </div>
-        <div class="account text-right">
-          <a href="">
-            <i class="icon user-icon"></i>
-          </a>
-          <a href="">
-            <i class="icon heart-icon"></i>
-            <span>0</span>
-          </a>
-          <a href="">
-            <i class="icon basket-icon"></i>
-            <span>0</span>
-          </a>
-        </div>
+ <!-- Header Start -->
+ <header>
+  <div class="container">
+    <div class="logo-search-account">
+      <div class="logo text-left">
+        <a>
+          <img src="./assets/img/layout/logo.svg" />
+        </a>
+      </div>
+      <div class="search">
+        <form>
+          <input type="search" placeholder=" Nereye göndermek istiyorsun? Mahalle, İşyeri vb." />
+          <button>
+            <i class="icon-search"></i>
+          </button>
+        </form>
+      </div>
+      <div class="account text-right">
+        <a class="text" href="" class="text" style="display:none">
+          <span>Giriş Yap!</span>
+        </a>
+        <a href="" class="link">
+          <i class="icon-user"></i>
+        </a>
+        <a href="" class="link">
+          <i class="icon-heart"></i>
+          <span>0</span>
+        </a>
+        <a href="" class="link">
+          <i class="icon-shop"></i>
+          <span>0</span>
+        </a>
       </div>
     </div>
-  </header>
-  <!-- Header End -->
+  </div>
+</header>
+<!-- Header End -->
 
   <!-- Main Start -->
   <main class="main">
@@ -137,11 +140,14 @@
                   dolores molest. <a href="javascript:;" id="moreProduct">daha fazla</a></p>
               </div>
               <div class="form">
-                <input type="text" class="location" placeholder="Nereye göndermek istiyorsun? Mahalle, İşyeri vb.">
+                <div class="location-cont">
+                  <i class="icon-location"></i>
+                  <input type="text" class="location" placeholder="Nereye göndermek istiyorsun? Mahalle, İşyeri vb.">
+                </div>
                 <div class="buttons">
                   <a href="" class="btn btn-black order">Sipariş Ver</a>
                   <a href="" class="btn heart">
-                    <i class="icon heart-icon"></i>
+                    <i class="icon-heart"></i>
                   </a>
                   <a href="" class="btn btn-transparent border-color-gray share">Paylaş</a>
                 </div>
@@ -149,15 +155,15 @@
               <div class="icons">
                 <ul>
                   <li>
-                    <i class="icon payment-icon"></i>
+                    <i class="icon-card"></i>
                     <span>6 Aya Varan Taksit /</span>
                   </li>
                   <li>
-                    <i class="icon car-icon">i</i>
+                    <i class="icon-car"></i>
                     <span>Aynı Gün Teslimat /</span>
                   </li>
                   <li>
-                    <i class="icon tick-icon">i</i>
+                    <i class="icon-tick"></i>
                     <span>Ücretsiz Teslimat</span>
                   </li>
                 </ul>
@@ -215,14 +221,47 @@
                 </div>
               </div>
               <div id="reviews" class="tab-pane fade">
-                reviews
+                <div class="reviews">
+                  <h1>Be the first to review “Wooden chair”</h1>
+                  <p>Your rating</p>
+                  <div class="stars">
+                    <div class="rate">
+                      <input type="radio" id="star5" name="rate" value="5">
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4">
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3">
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2">
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1">
+                      <label for="star1" title="text">1 star</label>
+                    </div>
+                  </div>
+                  <div class="form">
+                    <div class="form-group">
+                      <label for="" class="label-normal">Your review</label>
+                      <textarea class="mt-3"></textarea>
+                    </div>
+                    <div class="two-grids">
+                      <div class="form-group">
+                        <label for="" class="label-normal">Name <span class="required">*</span></label>
+                        <input type="text" class="form-normal">
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="label-normal">Email <span class="required">*</span></label>
+                        <input type="text" class="form-normal">
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="container title-subtitle text-center" id="titlesubtitle">
-            <img src="./assets/img/layout/logo-2.png" class="mb-2" />
+            <h5>Helendo Store</h5>
             <p>When you start with a portrait and search for a pure form, a clear volume, through successive
               eliminations,
               you arrive inevitably at the egg. Likewise, starting with the egg and following the same process in
@@ -255,103 +294,111 @@
       <article class="related-products">
         <div class="container">
           <h4 class="text-center mb-5">Related products</h4>
-          <div class="swiper relatedProducts">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="product-item">
-                  <a href="">
-                    <div class="image">
-                      <img src="./assets/img/layout/product-1.jpg" />
-                      <span class="out-of-stock">Out Of Stock</span>
-                    </div>
-                    <div class="content">
-                      <div class="title text-center">
-                        <h5>Teapot with black tea</h5>
+          <div class="cont">
+            <div class="swiper relatedProducts">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <a href="">
+                      <div class="image">
+                        <img src="./assets/img/layout/product-1.jpg" />
+                        <span class="out-of-stock">Out Of Stock</span>
                       </div>
-                      <div class="price">
-                        <span class="new-price">£20.00</span>
-                        <span class="old-price">£135.00</span>
+                      <div class="content">
+                        <div class="title text-center">
+                          <h5>Teapot with black tea</h5>
+                        </div>
+                        <div class="price">
+                          <span class="new-price">£20.00</span>
+                          <span class="old-price">£135.00</span>
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <a href="">
+                      <div class="image">
+                        <img src="./assets/img/layout/product-1.jpg" />
+                        <span class="out-of-stock">Out Of Stock</span>
+                      </div>
+                      <div class="content">
+                        <div class="title text-center">
+                          <h5>Teapot with black tea</h5>
+                        </div>
+                        <div class="price">
+                          <span class="new-price">£20.00</span>
+                          <span class="old-price">£135.00</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <a href="">
+                      <div class="image">
+                        <img src="./assets/img/layout/product-1.jpg" />
+                        <span class="out-of-stock">Out Of Stock</span>
+                      </div>
+                      <div class="content">
+                        <div class="title text-center">
+                          <h5>Teapot with black tea</h5>
+                        </div>
+                        <div class="price">
+                          <span class="new-price">£20.00</span>
+                          <span class="old-price">£135.00</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <a href="">
+                      <div class="image">
+                        <img src="./assets/img/layout/product-1.jpg" />
+                        <span class="onsale">-14%</span>
+                      </div>
+                      <div class="content">
+                        <div class="title text-center">
+                          <h5>Teapot with black tea</h5>
+                        </div>
+                        <div class="price">
+                          <span class="new-price">£20.00</span>
+                          <span class="old-price">£135.00</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-item">
+                    <a href="">
+                      <div class="image">
+                        <img src="./assets/img/layout/product-1.jpg" />
+                        <span class="out-of-stock">Out Of Stock</span>
+                      </div>
+                      <div class="content">
+                        <div class="title text-center">
+                          <h5>Teapot with black tea</h5>
+                        </div>
+                        <div class="price">
+                          <span class="new-price">£20.00</span>
+                          <span class="old-price">£135.00</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="product-item">
-                  <a href="">
-                    <div class="image">
-                      <img src="./assets/img/layout/product-1.jpg" />
-                      <span class="out-of-stock">Out Of Stock</span>
-                    </div>
-                    <div class="content">
-                      <div class="title text-center">
-                        <h5>Teapot with black tea</h5>
-                      </div>
-                      <div class="price">
-                        <span class="new-price">£20.00</span>
-                        <span class="old-price">£135.00</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item">
-                  <a href="">
-                    <div class="image">
-                      <img src="./assets/img/layout/product-1.jpg" />
-                      <span class="out-of-stock">Out Of Stock</span>
-                    </div>
-                    <div class="content">
-                      <div class="title text-center">
-                        <h5>Teapot with black tea</h5>
-                      </div>
-                      <div class="price">
-                        <span class="new-price">£20.00</span>
-                        <span class="old-price">£135.00</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item">
-                  <a href="">
-                    <div class="image">
-                      <img src="./assets/img/layout/product-1.jpg" />
-                      <span class="onsale">-14%</span>
-                    </div>
-                    <div class="content">
-                      <div class="title text-center">
-                        <h5>Teapot with black tea</h5>
-                      </div>
-                      <div class="price">
-                        <span class="new-price">£20.00</span>
-                        <span class="old-price">£135.00</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="product-item">
-                  <a href="">
-                    <div class="image">
-                      <img src="./assets/img/layout/product-1.jpg" />
-                      <span class="out-of-stock">Out Of Stock</span>
-                    </div>
-                    <div class="content">
-                      <div class="title text-center">
-                        <h5>Teapot with black tea</h5>
-                      </div>
-                      <div class="price">
-                        <span class="new-price">£20.00</span>
-                        <span class="old-price">£135.00</span>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
+            </div>
+            <div class="swiper-button-next">
+              <i class="icon-arrow-light"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="icon-arrow-light"></i>
             </div>
           </div>
         </div>
@@ -364,21 +411,21 @@
     <div class="container">
       <section class="support">
         <div class="item">
-          <i class="icon day-icon"></i>
+          <i class="icon-cargo"></i>
           <div class="text">
             <h6>Support 24/7</h6>
             <h5>We are committed toserving you 24/7</h5>
           </div>
         </div>
         <div class="item">
-          <i class="icon support-icon"></i>
+          <i class="icon-comment"></i>
           <div class="text">
             <h6>Free Shipping</h6>
             <h5>Free shipping international transport</h5>
           </div>
         </div>
         <div class="item">
-          <i class="icon shopping-icon"></i>
+          <i class="icon-security"></i>
           <div class="text">
             <h6>Free Returns</h6>
             <h5>You can return the item within 30 days.</h5>
@@ -404,23 +451,23 @@
             <h6>Address</h6>
             <ul class="info">
               <li>
-                <i class="icon location-icon"></i>
+                <i class="icon-location"></i>
                 <span>Helendo, Chicago, USA 2018</span>
               </li>
               <li>
-                <i class="icon phone-icon"></i>
+                <i class="icon-telephone"></i>
                 <a href="tel:846677028028">+846677028028</a>
               </li>
             </ul>
             <div class="social-networks">
               <a target="_blank">
-                <i class="icon facebook-icon"></i>
+                <i class="icon-facebook"></i>
               </a>
               <a target="_blank">
-                <i class="icon instagram-icon"></i>
+                <i class="icon-instagram"></i>
               </a>
               <a target="_blank">
-                <i class="icon linkedin-icon"></i>
+                <i class="icon-linkedin"></i>
               </a>
             </div>
           </div>
@@ -473,17 +520,17 @@
             <ul>
               <li>
                 <a target="_blank">
-                  <i class="icon facebook-icon"></i>
+                  <i class="icon-facebook"></i>
                 </a>
               </li>
               <li>
                 <a target="_blank">
-                  <i class="icon instagram-icon"></i>
+                  <i class="icon-instagram"></i>
                 </a>
               </li>
               <li>
                 <a target="_blank">
-                  <i class="icon linkedin-icon"></i>
+                  <i class="icon-linkedin"></i>
                 </a>
               </li>
             </ul>
@@ -538,8 +585,8 @@
         }
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".related-products .swiper-button-next",
+        prevEl: ".related-products .swiper-button-prev",
       },
     });
   </script>
