@@ -1,14 +1,13 @@
 @import '../utilities/_variables';
 
 .related-products {
-    .cont {
+    .container {
         position: relative;
         .swiper {
             &.relatedProducts {
             }
         }
         .swiper-button-next , .swiper-button-prev {
-            top:40%;
             &:after {
                 display: none;
             }

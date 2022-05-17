@@ -44,6 +44,9 @@
 .product-details-tab-menu {
     width:100%;
     ul {
+        @media (max-width: $screenmd) {
+            justify-content: center;
+        }
         li {
             position: relative;
             padding-right: 15px;
@@ -82,20 +85,44 @@
                         font-size: 24px;
                         margin-bottom:15px;
                         color:$black;
+                        @media (max-width: $screenmd) {
+                            margin-top:20px;
+                        }
                     }
                     p {
                         font-size: 16px;
                         line-height: 27px;
                         color:$black;
+                        @media (max-width: $screenmd) {
+                            font-size:14px;
+                            line-height: 20px;
+                            margin:0 10px;
+                        }
+                    }
+                    @media (max-width: $screenmd) {
+                        text-align: center;
                     }
                 }
                 .images {
+                    @media (max-width: $screenmd) {
+                        text-align: center;
+                    }
                     img {
 
                     }
                 }
             }
+            &#additionalinformation {
+                > div {
+                    @media (max-width: $screenmd) {
+                        margin:0 15px;
+                    }
+                }
+            }
             .reviews {
+                @media (max-width: $screenmd) {
+                    margin:0 15px;
+                }
                 h1 {
                     font-size: 26px;
                     line-height: 1.41;

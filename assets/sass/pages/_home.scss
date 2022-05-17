@@ -1,6 +1,10 @@
 @import '../utilities/variables';
 
 .main {
+    margin-top:120px;
+    @media (max-width: $screenmd) {
+        margin-top:170px;
+    }
     .section-space {
         &.banner {
             margin-top: 120px;

@@ -162,3 +162,11 @@ tbody, td, tfoot, th, thead, tr {
   z-index: 9999;
   background-size: 80px;
 }
+
+_::-webkit-full-page-media, _:future, :root .safari_only {
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+}

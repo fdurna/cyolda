@@ -150,11 +150,14 @@
                     <span class="btn-price">₺59.90</span>
                   </div>
                 </div>
-                <input type="text" class="location" placeholder="Nereye göndermek istiyorsun? Mahalle, İşyeri vb.">
+                <div class="location-cont">
+                  <i class="icon-location"></i>
+                  <input type="text" class="location" placeholder="Nereye göndermek istiyorsun? Mahalle, İşyeri vb.">
+                </div>
                 <div class="buttons">
                   <a href="" class="btn btn-black order">Sipariş Ver</a>
                   <a href="" class="btn heart">
-                    <i class="icon heart-icon"></i>
+                    <i class="icon-heart"></i>
                   </a>
                   <a href="" class="btn btn-transparent border-color-gray share">Paylaş</a>
                 </div>
@@ -162,15 +165,15 @@
               <div class="icons">
                 <ul>
                   <li>
-                    <i class="icon payment-icon"></i>
+                    <i class="icon-card"></i>
                     <span>6 Aya Varan Taksit /</span>
                   </li>
                   <li>
-                    <i class="icon car-icon">i</i>
+                    <i class="icon-car"></i>
                     <span>Aynı Gün Teslimat /</span>
                   </li>
                   <li>
-                    <i class="icon tick-icon">i</i>
+                    <i class="icon-tick"></i>
                     <span>Ücretsiz Teslimat</span>
                   </li>
                 </ul>
@@ -197,20 +200,78 @@
             </ul>
             <div class="tab-content">
               <div id="description" class="tab-pane fade in active show">
-                description
+                <div class="product-details-wrap">
+                  <div class="row align-items-center">
+                    <div class="col-lg-7 order-md-1 order-2">
+                      <div class="details mt-30">
+                        <h5 class="mb-10">Detail</h5>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
+                          quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                          Temporibus autem quibusdam et aut officiis debitis aut rerum omnis voluptas assumenda.</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 order-md-2 order-1">
+                      <div class="images">
+                        <img src="./assets/img/subpages/product-detail/product-detail-1.png" class="img-fluid" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div id="additionalinformation" class="tab-pane fade">
-                additionalinformation
+                <div class="row align-items-center">
+                  <div class="col-lg-6 col-xs-12">
+                    <strong>Weight</strong>
+                    <span>1.2 kg</span>
+                  </div>
+                  <div class="col-lg-6 col-xs-12">
+                    <strong>Dimensions</strong>
+                    <span>12 × 2 × 1.5 cm</span>
+                  </div>
+                </div>
               </div>
               <div id="reviews" class="tab-pane fade">
-                reviews
+                <div class="reviews">
+                  <h1>Be the first to review “Wooden chair”</h1>
+                  <p>Your rating</p>
+                  <div class="stars">
+                    <div class="rate">
+                      <input type="radio" id="star5" name="rate" value="5">
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4">
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3">
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2">
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1">
+                      <label for="star1" title="text">1 star</label>
+                    </div>
+                  </div>
+                  <div class="form">
+                    <div class="form-group">
+                      <label for="" class="label-normal">Your review</label>
+                      <textarea class="mt-3"></textarea>
+                    </div>
+                    <div class="two-grids">
+                      <div class="form-group">
+                        <label for="" class="label-normal">Name <span class="required">*</span></label>
+                        <input type="text" class="form-normal">
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="label-normal">Email <span class="required">*</span></label>
+                        <input type="text" class="form-normal">
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="container title-subtitle text-center" id="titlesubtitle">
-            <img src="./assets/img/layout/logo-2.png" class="mb-2" />
+            <h5>Helendo Store</h5>
             <p>When you start with a portrait and search for a pure form, a clear volume, through successive
               eliminations,
               you arrive inevitably at the egg. Likewise, starting with the egg and following the same process in
@@ -341,6 +402,12 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="swiper-button-next">
+            <i class="icon-arrow-light"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="icon-arrow-light"></i>
           </div>
         </div>
       </article>
@@ -526,8 +593,8 @@
         }
       },
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".related-products .swiper-button-next",
+        prevEl: ".related-products .swiper-button-prev",
       },
     });
   </script>
