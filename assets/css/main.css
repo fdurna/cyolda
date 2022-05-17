@@ -9296,7 +9296,7 @@ tbody, td, tfoot, th, thead, tr {
   background-size: 80px;
 }
 
-_::-webkit-full-page-media select, _:future select, :root .safari_only select {
+select {
   appearance: none;
 }
 
