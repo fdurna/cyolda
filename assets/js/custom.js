@@ -2,7 +2,9 @@
 $(document).ready(function () {
   moreProduct();
   header();
-  if($(".counter").length) {
+  creditcard();
+  icheck();
+  if ($(".counter").length) {
     counterDown();
   }
 });
@@ -28,7 +30,7 @@ var moreProduct = function () {
 };
 // moreProduct FAQ End
 
-// counterDown 
+// counterDown
 var counterDown = function () {
   const second = 1000,
     minute = second * 60,
@@ -52,8 +54,7 @@ var counterDown = function () {
     x = setInterval(function () {
       const now = new Date().getTime(),
         distance = countDown - now;
-        (document.getElementById("days").innerText = Math.floor(distance / day)),
-
+      (document.getElementById("days").innerText = Math.floor(distance / day)),
         (document.getElementById("hours").innerText = Math.floor(
           (distance % day) / hour
         )),
@@ -65,19 +66,40 @@ var counterDown = function () {
         ));
     }, 0);
 };
-// counterDown FAQ 
+// counterDown FAQ
 
-
-
-//header 
+//header
 var header = function () {
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     var winTop = $(window).scrollTop();
     if (winTop >= 30) {
       $("header").addClass("sticky-header");
     } else {
       $("header").removeClass("sticky-header");
     }
-  })
-}
+  });
+};
 //heeader
+
+//credit card
+var creditcard = function () {
+  var name = $("#name");
+  var lastname = $("#lastname");
+  name.on("input", function () {
+    $("#nameText").text(name.val());
+  });
+  lastname.on("input", function () {
+    $("#lastnameText").text(lastname.val());
+  });
+};
+//credit card
+
+//icheck
+var icheck = function () {
+  $(".iCheck").iCheck({
+      checkboxClass: "icheckbox_square-blue",
+      radioClass: "iradio_square-blue",
+      increaseArea: "20%",
+    });
+};
+//icheck

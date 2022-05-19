@@ -9220,6 +9220,38 @@ button:focus {
   outline: none;
 }
 
+.icheckbox_square-blue {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+}
+
+.icheckbox_square-blue:before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 10px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  z-index: 99999;
+  opacity: 0;
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+}
+
+.icheckbox_square-blue.checked:before {
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+
 /*form end*/
 .border-radius-4 {
   border-radius: 4px;
@@ -9232,16 +9264,16 @@ button:focus {
   margin-bottom: 1rem;
 }
 
-.two-grids div {
+.two-grids div:not(.icheckbox_square-blue) {
   width: 50%;
   margin-bottom: 0;
 }
 
-.two-grids div:first-child {
+.two-grids div:not(.icheckbox_square-blue):first-child {
   margin-right: 10px;
 }
 
-.two-grids div:last-child {
+.two-grids div:not(.icheckbox_square-blue):last-child {
   margin-left: 10px;
 }
 
@@ -10002,26 +10034,26 @@ footer .footer .copyright .social ul li a i {
   background-color: #ddb14a;
 }
 
-.sub-page-banner .select {
+.select {
   position: relative;
 }
 
-.sub-page-banner .select .list-cont span {
+.select .list-cont span {
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
   margin-right: 10px;
-  color: #000;
-  font-weight: bold;
+  color: #000 !important;
+  font-weight: bold !important;
 }
 
-.sub-page-banner .select .list-cont span i {
+.select .list-cont span i {
   display: inline-block;
   transform: rotate(90deg);
   font-size: 12px;
 }
 
-.sub-page-banner .select .list-cont .list {
+.select .list-cont .list {
   display: none;
   position: absolute;
   z-index: 99;
@@ -10031,26 +10063,26 @@ footer .footer .copyright .social ul li a i {
   transition: all 0.5s ease;
 }
 
-.sub-page-banner .select .list-cont .list ul {
+.select .list-cont .list ul {
   margin: 10px 0;
 }
 
-.sub-page-banner .select .list-cont .list ul li {
+.select .list-cont .list ul li {
   display: block;
 }
 
-.sub-page-banner .select .list-cont .list ul li a {
+.select .list-cont .list ul li a {
   display: block;
   padding: 5px 10px;
   color: #777;
   font-size: 14px;
 }
 
-.sub-page-banner .select .list-cont .list ul li:hover a {
+.select .list-cont .list ul li:hover a {
   color: #000;
 }
 
-.sub-page-banner .select .list-cont:hover .list {
+.select .list-cont:hover .list {
   display: block;
   transition: all 0.5s ease;
 }
@@ -10784,15 +10816,15 @@ footer .footer .copyright .social ul li a i {
 }
 
 .cart-table table tbody > tr td.remove a i, .orders table tbody > tr td.remove a i {
+  display: block;
+  height: 19px;
+  width: 15px;
+  font-size: 18px;
   transform: rotate(90deg);
 }
 
-.cart-table table tbody > tr td.remove a i.close-icon:hover, .orders table tbody > tr td.remove a i.close-icon:hover {
-  background-image: url("../img//icons/close-hover.svg");
-}
-
-.cart-table table tbody > tr td.remove a i.arrow-small-icon:hover, .orders table tbody > tr td.remove a i.arrow-small-icon:hover {
-  background-image: url("../img//icons/arrow-small-hover.svg");
+.cart-table table tbody > tr td.remove a i:before, .orders table tbody > tr td.remove a i:before {
+  color: #bfbfbf;
 }
 
 .cart-table table tbody > tr td.image, .orders table tbody > tr td.image {
@@ -10870,6 +10902,13 @@ footer .footer .copyright .social ul li a i {
   font-weight: 600;
 }
 
+.cart-table table tbody > tr td.total a.btn, .orders table tbody > tr td.total a.btn {
+  font-size: 14px;
+  line-height: 37px;
+  height: 38px;
+  width: 175px;
+}
+
 .cart-table table tbody > tr.active td.remove a i, .orders table tbody > tr.active td.remove a i {
   transform: rotate(270deg);
 }
@@ -10882,6 +10921,7 @@ footer .footer .copyright .social ul li a i {
 @media (max-width: 991px) {
   .account .box {
     margin-bottom: 20px;
+    margin-top: 25px;
   }
 }
 
@@ -10889,34 +10929,38 @@ footer .footer .copyright .social ul li a i {
   width: 100%;
   display: block;
   position: relative;
+  transition: all 0.5s ease;
 }
 
 .account .box .menu li a {
-  padding: 12px 0 12px 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.5s ease;
+  padding: 12px 0 12px 15px;
   border-bottom: 1px solid #dddddd;
   width: 100%;
-  display: block;
 }
 
 .account .box .menu li a span {
   color: #000;
   font-size: 13px;
   font-weight: 400;
+  margin-left: 8px;
 }
 
-.account .box .menu li a i.icon {
+.account .box .menu li a i {
+  font-size: 15px;
+}
+
+.account .box .menu li a i.icon-card {
+  font-size: 11px;
+}
+
+.account .box .menu li a i.icon-arrow-bold {
   position: absolute;
-  top: 13px;
-  width: 18px;
-  height: 18px;
-}
-
-.account .box .menu li a i:first-child {
-  left: 15px;
-}
-
-.account .box .menu li a i.icon-arrow {
   right: 10px;
+  font-size: 8px;
 }
 
 .account .box .menu li:last-child a {
@@ -10924,31 +10968,13 @@ footer .footer .copyright .social ul li a i {
 }
 
 .account .box .menu li:hover a span, .account .box .menu li.active a span {
+  transition: all 0.5s ease;
   color: #ddb14a;
 }
 
-.account .box .menu li:hover a i.dashboard-icon, .account .box .menu li.active a i.dashboard-icon {
-  background-image: url("../img//icons/dashboard-hover.svg");
-}
-
-.account .box .menu li:hover a i.user-icon, .account .box .menu li.active a i.user-icon {
-  background-image: url("../img//icons/user-hover.svg");
-}
-
-.account .box .menu li:hover a i.basket-icon, .account .box .menu li.active a i.basket-icon {
-  background-image: url("../img//icons/basket-hover.svg");
-}
-
-.account .box .menu li:hover a i.payment-icon, .account .box .menu li.active a i.payment-icon {
-  background-image: url("../img//icons/payment-hover.svg");
-}
-
-.account .box .menu li:hover a i.location-icon, .account .box .menu li.active a i.location-icon {
-  background-image: url("../img//icons/location-hover.svg");
-}
-
-.account .box .menu li:hover a i.logout-icon, .account .box .menu li.active a i.logout-icon {
-  background-image: url("../img//icons/logout-hover.svg");
+.account .box .menu li:hover a i:before, .account .box .menu li.active a i:before {
+  transition: all 0.5s ease;
+  color: #ddb14a;
 }
 
 .account .box .content {
@@ -11010,6 +11036,14 @@ footer .footer .copyright .social ul li a i {
   color: #000;
 }
 
+.account .box .content .gift .price-icon i {
+  font-size: 50px;
+}
+
+.account .box .content .gift .price-icon i:before {
+  color: #ddb14a;
+}
+
 .account .box .content .gift p {
   margin: 15px 0;
   font-size: 13px;
@@ -11025,14 +11059,12 @@ footer .footer .copyright .social ul li a i {
 }
 
 .account .box .content .gift a i {
-  width: 8px;
-  height: 8px;
-  background-image: url("../img//icons/arrow-small-hover.svg");
-  margin-left: 7px;
+  margin-left: 5px;
+  font-size: 8px;
 }
 
-.account .box .content .gift:hover .price-icon i {
-  background-image: url("../img//icons/gift-hover.svg");
+.account .box .content .gift a:hover i:before {
+  color: #ddb14a;
 }
 
 .account .box .content .add-new {
@@ -11050,13 +11082,7 @@ footer .footer .copyright .social ul li a i {
 }
 
 .account .box .content .add-new a i {
-  width: 22px;
-  height: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 4px;
+  font-size: 35px;
 }
 
 .account .box .content .add-new a span {
@@ -11066,8 +11092,8 @@ footer .footer .copyright .social ul li a i {
   font-size: 14px;
 }
 
-.account .box .content .add-new:hover a i.add-icon {
-  background-image: url("../img//icons/add-hover.svg");
+.account .box .content .add-new:hover a i:before {
+  color: #ddb14a;
 }
 
 .account .box .content .add-new:hover a span {
@@ -11095,8 +11121,8 @@ footer .footer .copyright .social ul li a i {
   align-items: center;
 }
 
-.account .box .content .edit .button-icon a i.edit-icon {
-  background-image: url("../img//icons/edit-hover.svg");
+.account .box .content .edit .button-icon a i:before {
+  color: #ddb14a;
 }
 
 .account .box .content .edit .button-icon a span {
@@ -11178,6 +11204,7 @@ footer .footer .copyright .social ul li a i {
 
 .account .box .content .remind .left i {
   margin-right: 25px;
+  font-size: 30px;
 }
 
 .account .box .content .remind .left .info h6 {
@@ -11218,8 +11245,8 @@ footer .footer .copyright .social ul li a i {
   color: #ddb14a;
 }
 
-.account .box .content .remind .right a:hover i {
-  background-image: url("../img//icons/edit-hover.svg");
+.account .box .content .remind .right a:hover i:before {
+  color: #ddb14a;
 }
 
 .account .box .content .remind .right a:hover span {
@@ -11320,6 +11347,27 @@ footer .footer .copyright .social ul li a i {
 
 .account .box .content .label-normal {
   margin-bottom: 0;
+  font-size: 12px;
+}
+
+.account .box .content .two-grids.check-with-input .form-group:last-child {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+  .account .box .content .two-grids.check-with-input {
+    flex-direction: column;
+  }
+  .account .box .content .two-grids.check-with-input > div {
+    width: 100%;
+  }
+  .account .box .content .two-grids.check-with-input > div:first-child {
+    margin-right: 0;
+  }
+  .account .box .content .two-grids.check-with-input > div:last-child {
+    margin-top: 15px;
+    margin-left: 0px;
+  }
 }
 
 .account .box .content .item-container {

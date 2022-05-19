@@ -118,53 +118,53 @@
             }
         }
     }
-    .select {
-        position: relative;
-        .list-cont {
-            span {
-                cursor:pointer;
-                display: inline-block;
-                font-size: 16px;
-                margin-right: 10px;
-                color:$black;
-                font-weight: bold;
-                i {
-                    display:inline-block;
-                    transform:rotate(90deg);
-                    font-size: 12px;
-                }
+}
+.select {
+    position: relative;
+    .list-cont {
+        span {
+            cursor:pointer;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 10px;
+            color:$black !important;
+            font-weight: bold !important;
+            i {
+                display:inline-block;
+                transform:rotate(90deg);
+                font-size: 12px;
             }
-            .list {
-                display:none;
-                position: absolute;
-                z-index: 99;
-                width:150px;
-                background-color:white;
-                border:1px solid #c9c9c9;
-                transition: all 0.5s ease;
-                ul {
-                    margin:10px 0;
-                    li {
-                        display: block;
+        }
+        .list {
+            display:none;
+            position: absolute;
+            z-index: 99;
+            width:150px;
+            background-color:white;
+            border:1px solid #c9c9c9;
+            transition: all 0.5s ease;
+            ul {
+                margin:10px 0;
+                li {
+                    display: block;
+                    a {
+                        display:block;
+                        padding:5px 10px;
+                        color:#777;
+                        font-size: 14px;
+                    }
+                    &:hover {
                         a {
-                            display:block;
-                            padding:5px 10px;
-                            color:#777;
-                            font-size: 14px;
-                        }
-                        &:hover {
-                            a {
-                                color:$black;
-                            }
+                            color:$black;
                         }
                     }
                 }
             }
-            &:hover {
-                .list {
-                    display: block;
-                    transition: all 0.5s ease;
-                }
+        }
+        &:hover {
+            .list {
+                display: block;
+                transition: all 0.5s ease;
             }
         }
     }

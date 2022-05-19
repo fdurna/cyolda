@@ -69,56 +69,44 @@
                 <ul class="menu">
                   <li class="active">
                     <a href="">
-                      <i class="icon dashboard-icon"></i></i>
+                      <i class="icon-dashboard"></i></i>
                       <span>Dashboard</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="icon user-icon"></i>
+                      <i class="icon-user"></i>
                       <span>Account Details</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="icon basket-icon"></i>
+                      <i class="icon-shop"></i>
                       <span>Orders</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="icon payment-icon"></i>
+                      <i class="icon-card"></i>
                       <span>Payment Method</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="icon location-icon"></i>
+                      <i class="icon-location"></i>
                       <span>Address</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="icon logout-icon"></i>
+                      <i class="icon-logout"></i>
                       <span>Logout</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                 </ul>
@@ -133,11 +121,11 @@
                   <form action="">
                     <div class="two-grids mt-3">
                       <div class="form-group">
-                        <label for="" class="label-normal">Kimin Özel Günü</label>
+                        <label for="" class="label-normal mb-2">Kimin Özel Günü</label>
                         <input type="text" class="form-normal">
                       </div>
                       <div class="form-group">
-                        <label for="" class="label-normal">Özel Gün Seçimi</label>
+                        <label for="" class="label-normal mb-2">Özel Gün Seçimi</label>
                         <select class="form-normal">
                           <option value="">Adana</option>
                           <option value="">Adana</option>
@@ -146,16 +134,16 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label for="" class="label-normal">Özel Gün Tarihi</label>
+                      <label for="" class="label-normal mb-2">Özel Gün Tarihi</label>
                       <input type="text" class="form-normal">
                     </div>
                     <div class="form-group">
-                      <label for="" class="label-normal">Hatırlatma Yapılacak Telefon Numarası</label>
+                      <label for="" class="label-normal mb-2">Hatırlatma Yapılacak Telefon Numarası</label>
                       <input type="text" class="form-normal">
                     </div>
-                    <div class="two-grids mt-3">
+                    <div class="two-grids check-with-input mt-3 align-items-end">
                       <div class="form-group">
-                        <label for="" class="label-normal">Hatırlatma Zamanı</label>
+                        <label for="" class="label-normal mb-2">Hatırlatma Zamanı</label>
                         <select class="form-normal">
                           <option value="">1 Gün Önce Hatırlat</option>
                           <option value="">1 Gün Önce Hatırlat</option>
@@ -163,11 +151,11 @@
                         </select>
                       </div>
                       <div class="form-group d-flex align-items-center">
-                        <input type="checkbox" class="check-normal">
-                        <label for="" class="label-normal ml-2">E-posta ve SMS ile hatırlatma servisinden yararlanmak istiyorum </label>
+                        <input tabindex="9" type="checkbox" id="check-1" class="iCheck">
+                        <label for="check-1" class="label-normal">E-posta ve SMS ile hatırlatma servisinden yararlanmak istiyorum </label>
                       </div>
                     </div>
-                    <div class="col-md-3 col-xs-12 pl-0 mt-4">
+                    <div class="col-md-3 col-xs-12 pl-0 pr-0 mt-4">
                       <button type="submit" class="btn btn-black">
                         Hatırlatma Ekle
                       </button>
@@ -323,6 +311,7 @@
   <script src="./assets/js/jquery.selectric.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/icheck.min.js"></script>
   <script src="./assets/js/custom.js"></script>
   <script>
     var swiper4 = new Swiper(".envelopeSwiper", {
@@ -333,6 +322,7 @@
         prevEl: ".swiper-button-prev",
       },
     });
+    $('.iCheck').iCheck('destroy');
   </script>
 </body>
 

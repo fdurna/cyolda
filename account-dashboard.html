@@ -69,56 +69,44 @@
                 <ul class="menu">
                   <li class="active">
                     <a href="">
-                      <i class="icon dashboard-icon"></i></i>
+                      <i class="icon-dashboard"></i></i>
                       <span>Dashboard</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="icon user-icon"></i>
+                      <i class="icon-user"></i>
                       <span>Account Details</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="icon basket-icon"></i>
+                      <i class="icon-shop"></i>
                       <span>Orders</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="icon payment-icon"></i>
+                      <i class="icon-card"></i>
                       <span>Payment Method</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="icon location-icon"></i>
+                      <i class="icon-location"></i>
                       <span>Address</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                   <li>
                     <a href="">
-                      <i class="icon logout-icon"></i>
+                      <i class="icon-logout"></i>
                       <span>Logout</span>
-                      <!--
-                      <i class="icon icon-arrow">icon</i>
-                      -->
+                      <i class="icon-arrow-bold"></i>
                     </a>
                   </li>
                 </ul>
@@ -136,12 +124,12 @@
                       <div class="gift">
                         <div class="price-icon">
                           <h6>25 TL</h6>
-                          <i class="icon gift-icon"></i>
+                          <i class="icon-gift"></i>
                         </div>
                         <p>Sana özel 150TL ve üzeri siparişlerde kullanabileceğin indirim kuponun hazır!</p>
                         <a href="">
                           <span>Hemen Kullan</span>
-                          <i class="icon arrow-small-icon"></i>
+                          <i class="icon-arrow-bold"></i>
                         </a>
                       </div>
                     </div>
@@ -149,12 +137,12 @@
                       <div class="gift">
                         <div class="price-icon">
                           <h6>25 TL</h6>
-                          <i class="icon gift-icon"></i>
+                          <i class="icon-gift"></i>
                         </div>
                         <p>Sana özel 150TL ve üzeri siparişlerde kullanabileceğin indirim kuponun hazır!</p>
                         <a href="">
                           <span>Hemen Kullan</span>
-                          <i class="icon arrow-small-icon"></i>
+                          <i class="icon-arrow-bold"></i>
                         </a>
                       </div>
                     </div>
@@ -165,7 +153,7 @@
                   </div>
                   <div class="add-new col-md-3 col-xs-12 mt-4">
                     <a href="">
-                      <i class="icon add-icon"></i>
+                      <i class="icon-plus"></i>
                       <span>Yeni Kayıt Ekle</span>
                     </a>
                   </div>
@@ -173,12 +161,12 @@
                     <h2>İletişim Tercihlerim</h2>
                   </div>
                   <div class="form-group d-flex align-items-center mt-4">
-                    <input type="checkbox" class="check-normal">
-                    <label for="" class="label-normal ml-2">ÇiçeğimYolda.com duyuru ve kampanyaları hakkında E-posta ve SMS ile almak istiyorum. </label>
+                    <input tabindex="9" type="checkbox" id="check-1" class="iCheck">
+                    <label for="check-1"> ÇiçeğimYolda.com duyuru ve kampanyaları hakkında E-posta ve SMS ile almak istiyorum.</label>
                   </div>
-                  <div class="form-group d-flex align-items-center">
-                    <input type="checkbox" class="check-normal">
-                    <label for="" class="label-normal ml-2">Hatırlatma Servisi ve Sepet Hatırlatması duyurularını E-posta ve SMS ile almak istiyorum. </label>
+                  <div class="form-group d-flex align-items-center mt-4">
+                    <input tabindex="9" type="checkbox" id="check-2" class="iCheck">
+                    <label for="check-2"> Hatırlatma Servisi ve Sepet Hatırlatması duyurularını E-posta ve SMS ile almak istiyorum.</label>
                   </div>
                 </div>
               </div>
@@ -330,6 +318,7 @@
   <script src="./assets/js/jquery.selectric.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/icheck.min.js"></script>
   <script src="./assets/js/custom.js"></script>
   <script>
     var swiper4 = new Swiper(".envelopeSwiper", {
@@ -340,6 +329,7 @@
         prevEl: ".swiper-button-prev",
       },
     });
+    $('.iCheck').iCheck('destroy');
   </script>
 </body>
 

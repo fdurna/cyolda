@@ -100,6 +100,37 @@ textarea:focus,
 button:focus {
     outline: none;
 }
+.icheckbox_square-blue {
+  position: relative;
+  width:15px;
+  height:15px;
+  margin-right:10px;
+  background-color:transparent;
+  border:1px solid black;
+  border-radius: 3px;
+  transition: all 0.5s ease;
+  &:before {
+    content: '';
+      display: inline-block;
+      width: 5px;
+      height: 10px;
+      position: absolute;
+      top: 1px;
+      left: 4px;
+      z-index: 99999;
+      opacity: 0;
+      transform: rotate(45deg);
+      transition: all 0.5s ease;
+      border-bottom: 2px solid $black;
+      border-right: 2px solid $black;
+  }
+  &.checked {
+    &:before {
+      transition: all 0.5s ease;
+      opacity: 1;
+    } 
+  }
+}
 /*form end*/
 .border-radius-4 {
   border-radius: 4px;
@@ -109,7 +140,7 @@ button:focus {
   align-items: center;
   justify-content:space-between;
   margin-bottom: 1rem;
-  div {
+  div:not(.icheckbox_square-blue) {
     width:50%;
     margin-bottom: 0;
     &:first-child {
