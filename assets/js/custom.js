@@ -4,9 +4,11 @@ $(document).ready(function () {
   header();
   creditcard();
   icheck();
+  popup();
   if ($(".counter").length) {
     counterDown();
-  }
+  };
+  
 });
 
 // Preloader Start
@@ -78,6 +80,7 @@ var header = function () {
       $("header").removeClass("sticky-header");
     }
   });
+  
 };
 //heeader
 
@@ -103,3 +106,11 @@ var icheck = function () {
     });
 };
 //icheck
+
+//popup
+var popup = function () {
+  $('.user').click(function () {
+    $("#loginRegister").modal('show');
+  });
+};
+//popup

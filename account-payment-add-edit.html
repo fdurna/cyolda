@@ -41,7 +41,7 @@
         <a class="text" href="" class="text" style="display:none">
           <span>Giriş Yap!</span>
         </a>
-        <a href="" class="link">
+        <a href="javascript:;" class="link user">
           <i class="icon-user"></i>
         </a>
         <a href="" class="link">
@@ -284,11 +284,84 @@
     </div>
   </footer>
   <!-- Footer End -->
+    <!-- Popup Start -->
+    <div class="popup-container">
+      <div class="login-register-container modal fade" id="loginRegister" tabindex="-1" style="display: none;"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-box-wrapper">
+              <div class="tab-menu">
+                <ul class="nav" role="tablist">
+                  <li class="tab__item nav-item active">
+                    <a class="nav-link active" data-toggle="tab" href="#login-tab" role="tab"
+                      aria-selected="true">Login</a>
+                  </li>
+                  <li class="tab__item nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#register-tab" role="tab" aria-selected="false">Our
+                      Register</a>
+                  </li>
+  
+                </ul>
+              </div>
+              <div class="tab-content">
+                <div class="tab-pane fade active show" id="login-tab" role="tabpanel">
+                  <form action="#">
+                    <h2>Login your account</h2>
+                    <div class="form-group mt-4">
+                      <input type="text" class="form-normal" placeholder="Username">
+                    </div>
+                    <div class="form-group mt-4 mb-4">
+                      <input type="text" class="form-normal" placeholder="Password">
+                    </div>
+                    <div class="checkbox-container mb-4">
+                      <div class="d-flex align-items-center">
+                        <input tabindex="9" type="checkbox" id="check-1" class="iCheck">
+                        <label for="check-1">Remember me</label>
+                      </div>
+                      <a href="#" class=" mt-10">Lost your password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-black">
+                      Login
+                    </button>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="register-tab" role="tabpanel">
+                  <form action="#">
+                    <h2>Register An Account</h6>
+                    <div class="form-group mt-4">
+                      <input type="text" class="form-normal" placeholder="Username">
+                    </div>
+                    <div class="form-group mt-4">
+                      <input type="text" class="form-normal" placeholder="Email address">
+                    </div>
+                    <div class="form-group mt-4">
+                      <input type="text" class="form-normal" placeholder="Password">
+                    </div>
+                    <p class="mt-4">Your personal data will be used to support your experience throughout this website,
+                      to manage access to your account, and for other purposes described in our <a href="#"
+                        class="privacy-policy" target="_blank">privacy policy</a>.</p>
+                    <div class="button-box mt-4">
+                      <button type="submit" class="btn btn-black">
+                        Register
+                      </button>
+                    </div>
+                  </form>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popup End -->
   <!--Scripts -->
   <script src="./assets/js/jquery-3.4.1.min.js"></script>
   <script src="./assets/js/jquery.selectric.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
   <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/icheck.min.js"></script>
   <script src="./assets/js/custom.js"></script>
   <script>
     var swiper4 = new Swiper(".envelopeSwiper", {

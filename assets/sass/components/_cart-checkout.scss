@@ -333,6 +333,9 @@
 .cart-table , .orders {
   table {
     width: 100%;
+    @media (max-width: $screensm) {
+      width:800px;
+    }
     thead > tr {
       th {
         border-top: medium none;
@@ -359,6 +362,19 @@
         padding: 20px 0px 20px;
         border-top: 1px solid #ddd;
       }
+      td.x {
+        width: 40px;
+        a {
+          i {
+            &:before {
+              color: #c5c5c5;
+            }
+          }
+        }
+      }
+      td.button {
+        width: 150px;
+      }
       td.remove {
         width: 50px;
         a {
@@ -383,6 +399,19 @@
           }
         }
       }
+      td.fav-name {
+        width: 300px;
+        @media (max-width: $screenmd) {
+          width: 200px;
+          padding-left: 20px;
+          padding-right: 0px;
+        }
+        a {
+          font-size: 16px;
+          font-weight: 500;
+          color: $black;
+        }
+      }
       td.name {
         width: 370px;
         @media (max-width: $screenmd) {
@@ -394,6 +423,13 @@
           font-size: 16px;
           font-weight: 500;
           color: $black;
+        }
+      }
+      td.fav-price {
+        min-width: 150px;
+        span {
+          color: #1f2226;
+          font-weight: 500;
         }
       }
       td.price {
@@ -443,6 +479,15 @@
             height: 38px;
             width: 175px;
           }
+        }
+      }
+      td.status {
+        font-size: 16px;
+        &.false {
+          color: #cd0000;
+        }
+        &.true {
+          color: #690;
         }
       }
       &.active {

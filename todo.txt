@@ -1,0 +1,12 @@
+- [ ] Header - Sticky header boyutu düzenlenmeli, açılış hareketi verilmeli transition eklenecek , boyutu ilk basta sabit - scroll yaptıgında kuculecek
+- [ ] Header - Favoriler iconu düzenlenmeli - > font - size 22 px olacka -  > renk #0f4634 bu olacak
+ 
+- [ ] Account Pages - Sol menüde hover yaptıgı zaman arrowlar gorunsun turuncu sekılde , birde active ise
+- [ ] Account - Dashboard - Hatırlatma Servisi içerik alanlarının boyutları düzenlenmeli - > https://prnt.sc/WYkzZHlHY7_p
+- [ ] Account - Payment-2 - İçerik alanların boyutu düzenlenmeli - https://prnt.sc/IwOeZDEDp6Fb
+- [ ] Account - Address - Adres ekleme butonu boyutu düzenlemlei(3 tane olmayacak 1 tane olacak) ve Address-2 sayfası için düzenle butonu iconu eksik
+
+
+login register popup tasarımları
+favoriler sayfası eklenecek - > https://template.hasthemes.com/helendo/helendo/wishlist.html
+- [ ] Site genelindeki yazı karakterleri değiştirilecek (Fontları ileteceğim) (2.değişim fontlar)
